@@ -1,0 +1,1166 @@
+﻿<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=0.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="css/swiper_1.css">
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll_1.css">
+	
+	
+		<link rel="stylesheet" type="text/css" href="css/select-person.css" />
+	
+
+<link rel="stylesheet" type="text/css" href="css/common_1.css"/>
+
+    
+        <link rel="stylesheet" type="text/css" href="css/ui-phone_1.css"/>
+    
+    
+
+
+<link rel="stylesheet" type="text/css" href="css/ours-table_1.css"/>
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="css/pager_1.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/condition_1.css"/>
+
+
+	
+
+    	
+	
+	
+	
+	
+	
+
+
+    <script type="text/javascript">
+        
+
+
+
+
+
+var ours_contextPath = "/";
+var ours_context={
+    sessionId:"5832229224281047406",
+    contextPath:"/",
+    startTime:"1594557144273",
+    
+    userId:"7386886003701966525",
+    userName:"信息中心",
+    orgId:"6238377184243139013",
+    
+    loginType:"phone",
+    ours_hasOrg:true,
+    debug:false,
+    ours_params:"7679A9F146F05A2CCA82C27197CC0060798A51083971823EE57D3FAC326E0F05603C04B7C3A7C8F615DA5BE5948AA6F5BBDD569013AE88FDFF281DA7A3EB7DC9149CEADDC17A4E36AB7262C64E52353B4956ED3C084450D5403F49302C19C2DFEDC5609E259C26E3",
+    js_version:"?V=3.2.26",
+    ours_core_params:{
+    	//ours_d:""
+    }
+};
+
+var ours_url = {
+    logout:"/login.do?method=logout",//登出
+	selectPerson:"/org/org.do?method=selectPerson",//选人界面url
+    selectPerson_getPerson: "/org/org.do?method=getPerson",//获取人接口
+    selectPerson_searchByName: "/org/org.do?method=searchByName",//获取组织对象根据name（搜索接口）
+    selectPerson_getOrg: "/org/org.do?method=getOrg",//获取组织机构(id不传代表，type:company获取所有部门，传了id，type：department代表获取子部门)
+    selectPerson_userId2AccountId:"/org/org.do?method=userId2AccountId",//外部id转换为我们账户id
+    selectPerson_accountId2UserId:"/org/org.do?method=accountId2UserId",//我们账户id转换为外部id
+    calc_setting:"/form/formCalc.do?method=index",//设置计算界面
+    print_preview:"/common.do?method=print",//打印预览
+    doUpload:"/file.do?method=doUpload"//执行上传路径
+};
+
+	</script>
+	<script type="text/javascript">
+		var wxState = false;
+		
+	</script>
+	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lazy-load-img.js"></script>
+	
+		
+		
+			
+			
+			
+			
+				
+					
+					
+					
+					
+						
+						
+							<script src="js/ours_phone_form.min.js"></script>
+						
+						
+					
+				
+				
+				
+					<script src="js/select-person.js"></script>
+				
+
+				
+				<script type="text/javascript" src="js/ours_wx_address_book.js"></script>
+
+			
+		
+		
+		
+	
+	
+	
+	
+	
+
+    
+
+    
+        <script src="js/ours_wx_address_book.js"></script>
+    
+
+    <meta name="description" content="Formtalk，组织级数据采集云。" />
+    <title>进门登记表</title>
+</head>
+<body>
+
+    
+        <script>
+            // YgPN8jj
+            ours.wxAddressBook.changeToOldDom();
+            console.log("ours.wxAddressBook1")
+        </script>
+    
+        <script>
+            (function () {
+            ours.wxAddressBook.changeToOldDom();
+            console.log("ours.wxAddressBook2")
+            })()
+        </script>
+    
+
+
+<div class="page-container ">
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" type="text/css" ours_media="print"
+      href="css/common_2.css"/>
+<link rel="stylesheet" type="text/css" ours_media="print"
+      href="css/form.css"/>
+<script type="text/javascript">
+    (function(){
+    	var isStatic = ours.cookie('is_static_font')=='true';
+    	function getWX(){
+        	if(isStatic && window.parent && window.parent.document.ourswx){
+        		return window.parent.document.ourswx;
+        	}else{
+        		return window.wx;
+        	}
+        }
+       
+        
+    	
+        var NS = ours.getNS();
+        NS.initThirdClient = function(){
+            
+            var shareSettingData = ours.parseJson('{\"shareTitle\":\"进门登记表\",\"shareImgUrl\":\"wechat-icon-01.jpg\",\"shareDesc\":\"Formtalk，组织级数据采集云。\",\"shareImgWholeUrl\":\"https:\/\/pro.formtalk.net\/res_apps\/form\/pc\/publish\/images\/wechat-icon-01.jpg\"}');
+            var shareInfo = {
+                title: ours.escapeHTMLToString(shareSettingData.shareTitle),
+                desc: ours.escapeHTMLToString(shareSettingData.shareDesc),
+                
+                        link: 'https://pro.formtalk.net/w.do?f=D402412DE57510A4E6A846E77318CB67F0FDF7A68B7A6E435697058C98477B32',
+                    
+                imgUrl: shareSettingData.shareImgWholeUrl
+            };
+            var hideMenu = {
+                menuList: ["menuItem:share:appMessage", "menuItem:share:timeline", "menuItem:favorite"] // 要隐藏的菜单项，只能隐藏“传播类”和“保护类”按钮，所有menu项见附录3
+            };
+            
+        };
+    })();
+    var postData = {
+        url: window.location.href,
+        title: window.document.title,
+        image: ''
+    };
+    // wx.miniProgram.postMessage({ data: {foo: 'bar'} })
+    if(navigator.userAgent.indexOf('wxwork')<0){
+        wx.miniProgram.postMessage({data:postData});
+    }
+</script><script type="text/javascript" src="js/oed.min.js"></script>
+<script type="text/javascript"
+        src="js/ours-verify.min.encode.js"></script>
+<script type="text/javascript">
+    $(function () {
+        var markText = $('.mark-text').text()
+        if (markText && markText.length > 4) {
+            markText = markText.substring(0, 4) + "..."
+            $('.mark-text').text(markText)
+        }
+    })
+    $._evalUrl = jQuery._evalUrl = function (url) {
+        return jQuery.ajax({
+            url: url,
+            type: "GET",
+            dataType: "script",
+            async: false,
+            global: false,
+            "throws": true,
+            cache: true
+        });
+    };
+</script>
+<div id="background_layer"
+     style="background-color:#D3D3D7;" class="background_wrap"></div>
+<script src="js/ours_wx_address_book.js"></script>
+<div class="form-container">
+<i id="showCloseBtn" class="fullScreen-close fullScreen-close-bgtranslucent" style='display:none'  onTap="ours.backUni(true);"></i>
+<script type="text/javascript">
+    //开始，表单开始加载时没有数据展示，先加载一个loading
+    ours.progress("加载中···");
+    window.onload = function(){
+        ours.progress().hide();
+    };
+    //结束
+	if(false){
+		var url = window.sessionStorage.getItem('backUrl');
+		if(!url){
+			$('#showCloseBtn').hide();
+		}
+	}
+</script>
+<div id="contentForm">
+<input type="hidden" id="formId" value="5e36fcd96964723f3b142b9d"/>
+<section class="form-preview-section form-width-"
+         style="background-color:#FFFFFF;"><script>
+        function getQrCodeValue(arg){
+            var value=$(arg).attr("value");
+            var otherAttrs=$(arg).attr("otherAttrs");
+                var otherMap=ours.parseJson(otherAttrs);
+            if(!value&&otherMap.qrType=="linkQrCode"&&otherMap.linktype!=""){//当是链接类型时后台没办法生成显示值。
+                
+            }else{
+                return value;
+            }
+            return "";
+        }
+    </script>
+    <!--不是企业微信-->
+            <header class="form-head-center" style="background-color:#A4A4A8;color:#FFFFFF">
+                <div class="form-top-title">进门登记表</div>
+                    <div class="form-top-info"></div>
+                </header>
+        <script>
+
+    (function () {
+        var NS = ours.getNS();
+        $(document).ready(function(){
+            if(NS.initFormHeader){
+                NS.initFormHeader();
+            }
+        });
+    })();
+</script><article id="form-fields" class="" style="visibility: visible;">
+        <div id="oursControls_1" class="form-ctrl form-ctrl-caption form-space-2 form-viewType-1  form-qr-code- form-field-outer-width-" style="">
+            <p id="_title_field_0X2b4tja"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171;display:block;word-wrap:break-word;word-break:break-all">信息安全说明</label>
+                <label class="form-ctrl-des" style="color:#848484;line-height:normal;border-top:1px dashed #999;display:block;width:100%;word-wrap:break-word;word-break:break-all"><div style="text-align: center;"><b><font color="#000000">请您填写以下信息（我们将保证您的隐私权，不会泄露任何信息）</font></b></div></label>
+        </div><div id="oursControls_3" title="cellphone" class="form-ctrl form-space-2 form-viewType-1  form-qr-code-  form-field-outer-width-" style="">
+            <p id="_title_field_U1AFG4HQ"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171"><span class='form-required'>*</span>手机</label>
+                <input id="field_U1AFG4HQ" placeholder="" class="ours-form" style="" name="field_U1AFG4HQ" validate="{&quot;require&quot;:true,&quot;dotNum&quot;:0,&quot;msgPosEl&quot;:&quot;ours.getNS().$('#_title_field_U1AFG4HQ')&quot;,&quot;phone&quot;:true,&quot;failMode&quot;:&quot;msgPosEl&quot;,&quot;msgPos&quot;:&quot;append&quot;,&quot;cellphones&quot;:&quot;&quot;}" onfocus="ours.hideErrorInfo(this);" type="text" value="" oninput="ours.$.ctrl.oursformcontrol.change(2,this);" onpropertychange="ours.$.ctrl.oursformcontrol.change(2,this);" onblur="ours.$.ctrl.oursformcontrol.blur(2,this);">
+                </div><div id="oursControls_4" title="textfield" class="form-ctrl form-space-2 form-viewType-1  form-qr-code-  form-field-outer-width-" style="">
+            <p id="_title_field_8it6QHtX"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171"><span class='form-required'>*</span>姓名</label>
+                <div oursid="5" id="control_field_8it6QHtX" type="textfield" showtype="0" class="form-simulation ours-fontsize-2 ours-class-textfield ours-readOnly ">王园</div>
+                    </div><div id="oursControls_6" title="textfield" class="form-ctrl form-space-2 form-viewType-1  form-qr-code-  form-field-outer-width-" style="">
+            <p id="_title_field_zWy4QWIL"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171;display:block;word-wrap:break-word;word-break:break-all"><span class='form-required'>*</span>房间号（格式：1-1-101）</label>
+                <div oursid="6" id="control_field_zWy4QWIL" type="textfield" showtype="0" class="form-simulation ours-fontsize-2 ours-class-textfield ours-readOnly ">9-2-303</div>
+                    </div><div id="oursControls_7" title="textfield" class="form-ctrl form-space-2 form-viewType-1  form-qr-code-  form-field-outer-width-" style="">
+            <p id="_title_field_MTAMuCob"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171"><span class='form-required'>*</span>身份证</label>
+                <div oursid="7" id="control_field_MTAMuCob" type="textfield" showtype="0" class="form-simulation ours-fontsize-2 ours-class-textfield ours-readOnly ">430421199512027878</div>
+                    </div><div id="oursControls_8" title="radio" class="form-ctrl form-space-2 form-viewType-1  form-qr-code-  form-field-outer-width-" style="">
+            <p id="_title_field_20E1t3gE"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171;display:block;word-wrap:break-word;word-break:break-all"><span class='form-required'>*</span>居住类型</label>
+                <div oursid="3" id="control_field_20E1t3gE" type="radio" validate="{&quot;dotNum&quot;:0,&quot;msgPosEl&quot;:&quot;ours.getNS().$('#_title_field_20E1t3gE')&quot;,&quot;failMode&quot;:&quot;msgPosEl&quot;,&quot;msgPos&quot;:&quot;append&quot;}" showtype="1" class="form-simulation ours-fontsize-2 ours-class-radio-1 ours-readOnly ">承租人</div>
+                    </div><div id="oursControls_11" title="singleselect" class="form-ctrl form-space-2 form-viewType-1  form-qr-code-  form-field-outer-width-" style="">
+            <p id="_title_field_ynYlfmRD"></p><label class="form-ctrl-title ours-fontsize-title-2" style="color:#717171;display:block;word-wrap:break-word;word-break:break-all"><span class='form-required'>*</span>是否填写入户巡查表</label>
+                <div oursid="4" id="control_field_ynYlfmRD" type="singleselect" showtype="0" class="form-simulation ours-fontsize-2 ours-class-singleselect ours-readOnly ">是</div>
+                    </div></article>
+    </section>
+</div>
+<script type="text/javascript">
+(function () {
+    var NS = ours.getNS();
+    NS.isStaticMobile = false;
+    NS.oursDesignForm = false;
+    
+    NS.isEditView = 'true';
+    NS.viewType = 'NEW';
+    NS.formId = "5e36fcd96964723f3b142b9d";
+    
+    NS.isFromPC = false;
+    
+    NS.openFrom = '';
+    NS.isExternalAccess = true;
+    NS.subFormId = "";
+    NS.formDataId = "5f0b02d8f0eeb848e074f222";
+    
+    NS.mainDataId = "5f0b02d8f0eeb848e074f222";
+    
+    NS.isInDialog = false;
+    
+    NS.isFlowForm = false;
+    
+    NS.formModifyTime = "2020-06-14 12:38:48";
+    
+    NS.postUrl = "";
+    
+    NS.generateCodeTitle = "";
+    
+    NS.controlSize = -1;
+    
+    NS.currentPage = 1;
+    
+    NS.totalNum = 11;
+    
+    NS.successURL = "";
+    
+    NS.canViewReport = false;//能否查看报表
+    NS.headBg = "";
+    
+    NS.bgImg = "";
+    
+    NS.clickType = "tap";
+    
+    NS.showBgColor = true;
+    
+    NS.formBgColor = "#D3D3D7";
+    
+    NS.formData4Calc = ours.parseJson('');
+    
+    NS.hasInputControl = true;
+    NS.hasPager = false;
+    
+    //前端计算是否需要 对数字类型结果字段进行四舍五入
+    NS.isRoundingNum = 'false';
+    
+    NS.formBaseLink = '/form/bizFormData.do?method=viewForm&formId=5e36fcd96964723f3b142b9d&dataId=5f0b02d8f0eeb848e074f222&fieldRightId=5e36fce75ec96d4876da1ae1&ours_as=d05b6956a4fbf19d29181866b6645a7ea3adeba1&viewType=NEW&fromTemp=true&formShowType=';
+    
+    NS.showRelationDataListURL = "/form/relation.do?method=showRelationDataList&formId=5e36fcd96964723f3b142b9d&dataId=5f0b02d8f0eeb848e074f222&ours_as=e913377ee8e4252327f78e2b6d731c7fade3a07a";
+    NS.getRelationDataURL = "/form/relation.do?method=getRelationData&formId=5e36fcd96964723f3b142b9d&dataId=5f0b02d8f0eeb848e074f222&ours_as=21065ec18e8d6d4d2925db3fe2cd1ae35bedcbf0";
+    NS.getAutoRelationDataURL = "/form/relation.do?method=getAutoRelationData&formId=5e36fcd96964723f3b142b9d&dataId=5f0b02d8f0eeb848e074f222&ours_as=8e875cf17fbe513afe5e81d5af477759a90900f2";
+    NS.getFieldRelationDataURL = "/form/relation.do?method=getFieldRelationData&formId=5e36fcd96964723f3b142b9d&dataId=5f0b02d8f0eeb848e074f222&ours_as=53b1377bac072c7f36084dc284a9b5e27935b923";
+    NS.getCorrelationRelationDataURL = "/form/relation.do?method=getRelationData4QuickLink&formId=5e36fcd96964723f3b142b9d&dataId=5f0b02d8f0eeb848e074f222&ours_as=53153f294a210e635e80235cc647cf52d73d8533";
+    
+    NS.savaTempDataURL = '/form/bizFormData.do?method=saveTempData&dataId=5f0b02d8f0eeb848e074f222&ours_as=f6b49801efef32cd75bb1e2ed9b30b8033cc0c26';
+    NS.savaDataURL = '/form/bizFormData.do?method=saveData&dataId=5f0b02d8f0eeb848e074f222&ours_as=e753a439b690271635b981060604924ec08052b6';
+    
+
+    var bgImg = NS.bgImg;
+    var isFromPC = NS.isFromPC;
+    if (bgImg && bgImg.trim()) {
+        if (bgImg.indexOf(".") !== -1) {
+            NS.bgImg = "/res_apps/form/form-images/" + bgImg;
+        } else {
+            NS.bgImg = 'https://file.formtalk.net/file.do?method=showImage&id=88fb7c73-7999-4787-8cc0-f95109bb582a&fn=&fl=';
+            if (!isFromPC) {
+                NS.bgImg = NS.bgImg + ("&width=" + $(window).width() + "&height=" + $(window).height());
+            }
+        }
+    }
+    /**
+     * 刷新文档高度，不足一屏补足一屏
+     */
+    NS.refreshArticleHeight = function () {
+        var $ = ours.getNS().$;
+        var styleHeight = "min-height";
+        var $section = $("#contentForm section");
+        if ($section.outerHeight(true) < $(window).height()) {
+            var sectionMPHeight = $section.outerHeight(true) - $section.height();
+            var articleHeight = $(window).height() - sectionMPHeight - $(".footer-btn").outerHeight(true) - $('footer').outerHeight(true) - $('header').outerHeight(true);
+            articleHeight = articleHeight - $(".form-subform-tabs").outerHeight(true) - $(".bizForm-button-container").outerHeight(true) - $(".flowhandle-top").outerHeight(true) - $(".workflow-files-area").outerHeight(true);
+            if ($section.find("article") && $section.find("article").length > 0) {
+                $section.find("article").css(styleHeight, articleHeight);
+            } else {
+                $section.find("#successInfoDiv").css(styleHeight, articleHeight);
+            }
+        } else {//超过还原默认高度
+            $section.find("article").css(styleHeight, "auto");
+            $section.find("#successInfoDiv").css(styleHeight, "auto");
+        }
+    };
+    if (ours.getParam("ours_params") != undefined && ours.getParam("ours_params") != "") {
+        NS.loginPhone = "";
+    } else {
+        NS.loginPhone = "13581965254";
+    }
+
+    $(document).on('click',function(){
+        var isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+        console.log('ios',isiOS);
+        // $(this).find('input:text').each(function(){
+        //     $(this).off().on('blur',function(){
+        //         if (isiOS) {
+        //             window.scrollTo(0, 0);
+        //         }
+        //     })
+        // })
+        $(this).find('.inputSearch').off().on('blur',function(){
+            if (isiOS) {
+                window.scrollTo(0, 0);
+            }
+        })
+    })
+})();
+
+function getQrCodeValue(arg){
+	var value=$(arg).attr("value");
+	var otherAttrs=$(arg).attr("otherAttrs");
+		var otherMap=ours.parseJson(otherAttrs);
+	if(!value&&otherMap.qrType=="linkQrCode"&&otherMap.linktype!=""){//当是链接类型时后台没办法生成显示值。
+		  
+	}else{
+		return value;
+	}
+    return "";
+}
+ // 
+function getLocatePosition(arg) {
+    var otherAttrs=arg.attr("otherAttrs");
+    var otherMap=ours.parseJson(otherAttrs);
+    var lnlg = ours.getById(otherMap.locationFieldId).attr("data");
+    return lnlg;
+}
+</script>
+<script type="text/javascript"
+                src="js/biz-form.js"></script>
+    <script type="text/javascript">
+    (function () {
+        var NS = ours.getNS();
+        if(NS.FormEvent && NS.FormEvent.triggerEventByEventName){
+            NS.triggerFormEventByEventName = NS.FormEvent.triggerEventByEventName;
+        } else {
+            NS.triggerFormEventByEventName = function () {
+                return {success: true};
+            };
+        }
+    })();
+</script><script type="text/javascript" src="js/biz-form-calc.js"></script>
+<script type="text/javascript">
+    (function () {
+        var NS = ours.getNS();
+        ours.ready(function () {
+            var isDialog = 'false';
+            var formWidth = '';
+            var $formContent = NS.$("#contentForm");
+            if (!ours.os.mobile && formWidth && (isDialog + "" === 'true')) {
+                $formContent.find("section").css({"width": "100%", "margin-top": "1px"});
+                $(ours.getCurrUrlDialog().getEl()).find(".ours-dialog-area").addClass("ours-dialog-width-" + formWidth);
+            }
+            NS.initContent4Html && NS.initContent4Html();
+            
+            NS.initFormData && NS.initFormData();
+            
+            ours.getEvent().trigger("parseBefore");
+            var eventResult = NS.triggerFormEventByEventName("script4beforeInit");
+            if (!eventResult.success) {
+                return;
+            }
+            ours.parse();
+            
+            NS.initThirdClient && NS.initThirdClient();
+            
+            var $section = $formContent.find("section");
+            var $backgroundLayer = NS.$("#background_layer");
+            if (NS.showBgColor && !$backgroundLayer.attr("bgColor")) {
+                $backgroundLayer.attr("bgColor", true);
+                $backgroundLayer.css("background-color", NS.formBgColor);
+            }
+            if (NS.bgImg && !$backgroundLayer.attr("bgColor")) {
+                //$("#background_layer").attr("src", NS.bgImg);
+                $backgroundLayer.css("background-image", "url("images/+ ns.bgimg +")");
+                if (!NS.isFromPC) {
+                    var bgColor = $section.css("background-color");
+                    if (bgColor) {
+                        $section.css("background-color", bgColor.toLowerCase().replace("rgb(", "rgba(").replace(")", ",0.8)"));
+                    }
+                }
+                $backgroundLayer.attr("bgImg", true);
+            }
+            if (NS.headBg) {
+                var headerObj = $formContent.find("header");
+                headerObj.css({'background-image': 'url('images/+ ns.headbg +')'});
+                ours.calculateImg({
+                    url: NS.headBg,
+                    obj: headerObj,
+                    w: headerObj.width()
+                });
+            }
+            
+            NS.BizForm.initBizForm();
+            
+            //触发表单解析完成事件
+            ours.getEvent().trigger("parseEnd");
+            if (ours.getNS().refreshArticleHeight) {
+                ours.getNS().refreshArticleHeight();
+            }
+            setTimeout(function () {
+                ours.getNS().$("#form-fields").css("visibility", "visible");
+                
+                var elements = $("#form-fields div[oursid]");
+                var phoneInput = '';
+                var phoneState = '';
+                for (var i = 0; i < elements.length; i++) {
+                    var fieldId = elements[i].id.substr(8);
+                    var field = ours.getById(fieldId);
+                    if (field.attr("otherAttrs")) {
+                        var str = field.attr("otherAttrs");
+                        var otherAttrs = ours.parseJson(str);
+                        if (otherAttrs.getLoginPhone) {
+                            phoneState = otherAttrs.getLoginPhone;
+                            ours.getNS().saveLabel = true;
+                            field.attr("value", ours.getNS().loginPhone);
+                            field.setValueBefore && field.setValueBefore();
+                            field.render();
+                            phoneInput = $('#' + fieldId);
+                            field.triggerUpdate();
+                            field.triggerAfterUpdate();
+                        }
+                    }
+                }
+                // if (phoneState) {
+                //     phoneInput.focus();
+                //     phoneInput.blur();
+                // }
+                
+                $(".check-history").on("click", function () {
+                    ours.go("/outerContract.do?method=me")
+                })
+                var isiOS = !!navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+                if(ours.os.mobile&&isiOS){
+                    $("input,textarea").blur(function () {
+                        setTimeout(function() {
+                            var scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                            window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+                        }, 100);
+                    });
+                }
+            });
+            eventResult = NS.triggerFormEventByEventName("script4afterInit");
+            if (!eventResult.success) {
+                return;
+            }
+        });
+
+    })();
+</script>
+<script type="text/javascript">
+    (function () {
+        var NS = ours.getNS();
+        //数据初始化
+        NS.initFormData = function () {
+            //移动端主表明细表多次切换时，此方法体会重复执行多次，加此状态防止多次执行
+            if (NS.initFormDataState) {
+                return;
+            }
+            NS.initFormDataState = true;
+            try {//回填data
+                var data4Id = null;
+                var data4DisplayStr = ours.getParam("data4Display");
+                
+                if (!data4DisplayStr) {
+                    var data4IdStr = ours.getParam("data4Id");
+                    if(!data4IdStr){
+                    	data4IdStr = '';
+                    }
+                    if (data4IdStr) {
+                        data4IdStr = decodeURIComponent(data4IdStr);
+                        data4IdStr = data4IdStr.replace(/\n|\r\n/g, "\\n");
+                        data4Id = ours.parseJson(data4IdStr);
+                    }
+                } else {
+                    data4DisplayStr = decodeURIComponent(data4DisplayStr);
+                    var data4Display = ours.parseJson(data4DisplayStr);
+                    //data4display是使用标题作为key这里需要用key在界面上找出相应标题相同的控件,并进行设置回填数据
+                    for (var key in data4Display) {
+                        var $oursForms = $("ours-form[title='" + key + "']");
+                        if ($oursForms.length > 0) {
+                            if (!data4Id) {
+                                data4Id = {};
+                            }
+                            var dataObj = data4Display[key];
+                            $oursForms.each(function () {
+                                var fieldId = $(this).attr("id");
+                                data4Id[fieldId] = dataObj;
+                            });
+                        }
+                    }
+                }
+                if (data4Id) {
+                    ours.setFormData(data4Id);
+                    //触发控件的更新
+                    ours.getEvent().on("parseEnd", function () {
+                        for (var key in data4Id) {
+                            var control = ours.getById(key);
+                            control && control.triggerAfterUpdate && control.triggerAfterUpdate();
+                        }
+                    });
+                }
+                
+                var correlation = ours.getParam("correlation");
+                if (correlation) {
+                    ours.postData(NS.getCorrelationRelationDataURL, {
+                        formId: NS.formId,
+                        dataId: NS.mainDataId,
+                        correlation: correlation
+                    }, function (data) {
+                        if (data.success) {
+                            var msg = data.msg;
+                            msg = ours.parseJson(msg);
+                            NS.BizForm.fillFormData(msg.master, msg.subData);
+                        }
+                    })
+                }
+                
+            } catch (e) {
+            }
+
+        };
+
+    })();
+</script>
+<script type="text/html" id="custom-print-header-tpl">
+    <div class="print-checkbox-list">
+        <div class="print-list-tit">打印内容：</div>
+        <div class="print-chechbox-item">
+            <ours-form id="showContent" name="showContent" type="checkbox" showType="1" hasRelationBtn="false" value="true" onAfterUpdate="showContent()"></ours-form>
+            表单内容
+            <div class="print-list-area">
+                <div class="print-list-info">（详细设置）</div>
+                <div class="print-select-list">
+                    <ul>
+                        <li>
+                            <label>
+                                    <span class="checkbox-wrapper">
+                                        <input type="checkbox" onchange="changeShow(this, 'sendProperty');" checked="checked"/>
+                                        <i class="selected-icon"></i>
+                                    </span>
+                                发起属性
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                    <span class="checkbox-wrapper">
+                                        <input type="checkbox" onchange="changeShow(this, 'imageControl');" checked="checked"/>
+                                        <i class="selected-icon"></i>
+                                    </span>
+                                图片控件
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                    <span class="checkbox-wrapper">
+                                        <input type="checkbox" onchange="changeShow(this, 'fileControl');" checked="checked"/>
+                                        <i class="selected-icon"></i>
+                                    </span>
+                                附件控件
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="print-chechbox-item">
+            <ours-form id="showComments" name="showComments" type="checkbox" showType="1" hasRelationBtn="false" value="false" onAfterUpdate="showComments()"></ours-form>
+            回复意见
+        </div>
+    </div>
+</script>
+
+<script type="text/javascript">
+    (function () {
+        var NS = ours.getNS();
+        //表单打印
+        ours.getEvent().on("parseBefore", function () {
+            if(NS.BizForm){
+                if(NS.BizForm.isSubForm){//明细表
+                    NS.printContent = $(".form-container").html();
+                }else {
+                    NS.printContent = $("#contentForm").html();
+                }
+            }
+        });
+        /**
+         * 打印表单
+         */
+        NS.printForm = function () {
+            if (NS.printContent) {
+                var html = NS.printContent;
+                var $links = $("link[ours_media=print]");
+                var $html = $("<div></div>");
+                $html.append($links.clone());
+                $html.append(html);
+                $html.find("#form-fields").css("visibility", "visible");
+                $html.find(".form-preview-section").css("margin-top", 0);
+                $html.find("ours-form").attr("right", "readOnly");
+                if(NS.BizForm.isSubForm){
+                    $html.find(".bizForm-button-container").remove();
+                    $html.find("ours-table").attr("onCellClick","").attr("style","width:100%");
+                    $html.find(".ours-class-toolbar").remove();
+                    $html.find(".form-subform-tabs").remove();
+                    $html.find("script").remove();
+                    $html.find(".form-grid-table-area").css("top",0).attr("style","width:100%");
+                }else {
+                    var comments = NS.$("#reply-comments-content");
+                    if (comments.length > 0) {//如果有评论回复
+                        comments = comments.clone();
+                        comments.find(".ui-avatar").remove();//移除头像
+                        comments.find(".comments-item-bd").css("padding-left", 0);
+                        var commentsHtml = comments.html();
+                        $html.find("section").after("<div class=\"comments-item print-flow-handle\" style=\"display: none\">" + commentsHtml + "</div>");
+                    }
+                    $html.find(".bizForm-button-container").remove();
+                }
+                var printConfig = {
+                    cssArray: ['/res_apps/form/pc/print/css/form.print.css'],
+                    jsArray: ['/res_apps/form/pc/print/form.print.js'],
+                    customHeader: $("#custom-print-header-tpl").html(),
+                    content: $html.html()
+                };
+                ours.printIt(printConfig);
+            }
+        };
+    })();
+</script><script type="text/html" id="subForm-udata-import-template">
+<link rel="stylesheet" type="text/css" href="css/subform-data-list.css"/>
+        <div class="excel-import-area">
+            <div class="excel-import-steps">
+                <ul>
+                    <li class="ours-data-import-li ours-data-import-li-select active">
+                        <span class="steps-title">上传附件</span>
+                        <span class="steps-num"><i class="num-info">1</i></span>
+                    </li>
+                    <li class="ours-data-import-li ours-data-import-li-result">
+                        <span class="steps-title">校验结果</span>
+                        <span class="steps-num"><i class="num-info">2</i></span>
+                    </li>
+                    <li class="ours-data-import-li ours-data-import-li-import">
+                        <span class="steps-title">导入数据</span>
+                        <span class="steps-num"><i class="num-info">3</i></span>
+                    </li>
+                </ul>
+            </div>
+            <!--步骤1：上传excel--开始-->
+            <div class="steps-one-area ours-data-import-panel ours-data-import-panel-select">
+				<form action="/form/formDataExcelOpt.do?method=checkSub4Import" method="post" enctype="multipart/form-data" id="ours_form_excel_import" class="fL">
+					<!-- <input type="file" class="batch-import-input" name="batch-import-input" id="batch-import-input" style="display:none;"> -->
+                </form>
+                <div class="btn-upload">
+                    请上传文件
+                    <!-- <input id="fileupload" type="file" name="files[]" /> -->
+                </div>
+                <div id="files_content"></div>
+                <div class="up_progress"></div>
+                <div class="steps-one-info">
+                    <!-- <span class="title-info">上传的Excel表符合以下规范：</span> -->
+                    <ol>
+                        <li>为保证数据导入顺利，推荐下载模板 <span class="uploadTemplate" style="color: #408EFC;cursor: pointer;"> 标准模板</span></li>
+                        <li>导入数据准确性校验，导入数据唯一性校验</li>
+                        <li>文件大小不超过5MB</li>
+                        <li>仅支持（*xls和*xlsx）文件</li>
+                        <li>每次导入数据行数请勿超过999行和100列</li>
+                    </ol>
+                </div>
+                <div class="select-opration">
+                    <div class="pub-bus-item-title">重复数据执行</div>
+                    <div class="pub-bus-item-cnt">
+                        <label>
+                            <div class="radio-button-wrapper">
+                                <input type="radio" name="opration-type" value="0" checked="checked" />
+                                <i class="selected-icon"></i>
+                            </div>
+                            跳过
+                        </label>
+                        <label>
+                            <div class="radio-button-wrapper">
+                                <input type="radio" name="opration-type" value="1" />
+                                <i class="selected-icon"></i>
+                            </div>
+                            覆盖
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!--步骤1：上传excel--结束-->
+            <!--步骤2：上传excel--开始-->
+            <div class="steps-two-area ours-data-import-panel ours-data-import-panel-result" style="display: none">
+                <div class="ours-form-container">
+                    <div class="correct-data">可导入数据条数 &nbsp;<span class="yesdata yes-2">0</span>&nbsp; 条</div>
+                    <div class="error-data">不可导入数据条数 &nbsp;<span class="nodata no-2">0</span>&nbsp; 条</div>
+                    <div class="error-detail error-detail-2" style="display: none;">
+                        <div class="error-detail-title">错误详情 <span>(可返回上一步修改上传附件中的错误数据，继续导入则忽略格式错误数据)</span></div>
+                        <div class="error-detail-content error-detail-content-2">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--步骤2：上传excel--结束-->
+            <!--步骤3：上传excel--开始-->
+            <div class="steps-four-area ours-data-import-panel ours-data-import-panel-import" style="display: none">
+                <div class="four-area-info-success">
+                    <img src="images/import-success-icon.png"/>
+                    <p>您已成功导入&nbsp;<span class="yesdata yes-3">0</span>&nbsp;条数据</p>
+                    <p>未导入数据条数&nbsp;<span class="nodata no-3">0</span>&nbsp; 条</p>
+                </div>
+                <div class="error-detail error-detail-3" style="display: none;">
+                    <div class="error-detail-title">未导入数据</div>
+                    <div class="error-detail-content error-detail-content-3">
+                        
+                    </div>
+                </div>
+            </div>
+            <!--步骤3：上传excel--结束-->
+        </div>
+</script><script>
+    //下载模板接口  
+    var downloadTemplateUrl = "/form/formDataExcelOpt.do?method=downloadImportTemplate&ours_as=c7a9d64b9663562611d692882f20eb5cc05d51eb";
+    
+</script>
+<script>
+        // CVzFwdCY
+        ours.wxAddressBook.changeToOldDom();
+    </script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+     
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var mapTips = new Map()
+var arrTips = []
+
+//判断bizType的值
+function judgeType(type,subId,id){
+    //判断是否出现了收起的X按钮
+    // var isClose = document.querySelector('.close-correlation')
+    //判断是否在查看页面，没有收起展开按钮
+    // var isView = document.querySelector('.correlation-footer')
+    //相关操作收起时取消点击事件
+    // if(!ours.os.mobile){
+    //     return false
+    // }
+    if(type == 4 || type == 5 || type == 6 || type == 8 || type == 9 || type == 10){
+        return isAlert(subId)
+    }else if(type == 11){
+        return true
+    }else{
+        return isAlert(id)
+    }
+}
+function isAlert(bizId){
+    for(var i = 0;i< arrTips.length;i++){
+        if(bizId == arrTips[i]){
+            ours.alert(mapTips.get(arrTips[i]))
+            return false
+        }
+    }
+    return true
+}
+// var formWidth = $('.form-width-2')
+// if(formWidth.length > 0){
+//     $('.correlation-footer .box-hide').css('width','960px')
+// }
+</script>
+    
+    
+    
+    
+    
+    
+        
+            
+
+
+
+
+
+
+
+
+
+	
+		
+	
+	
+
+
+
+
+<style type="text/css">
+    .page-container {
+        padding-bottom: 60px;
+    }
+    /*防止用户操作过快导致数据重复提交*/
+    .submit-button-disabled-ly{
+    pointer-events: none;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    .submit-button-disabled-ly:after{
+    content: "";
+    background: rgba(255,255,255,.5);
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: default;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    
+    
+    /*业务表单底部按钮开始*/
+    .bizForm-button-container {
+        background: #f7f7f7;
+        width: 100%;
+        padding: .05rem 0;
+        position: relative;
+        z-index: 3;
+        text-align: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .bizForm-button-container:after{
+        content: '';
+        height: 200%;
+        position: absolute;
+        top: -50%;
+        bottom: -50%;
+        left: -50%;
+        right: -50%;
+        -webkit-transform: scale(0.5);
+        transform: scale(0.5);
+        z-index: -1;
+        border-top: 1px solid #e6e6e6;
+    }
+    .bizForm-button-container .span-btn{
+        width: 1%;
+        zoom: 1;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        text-align: center;
+    }
+    .bizForm-button-container span.span-btn button{
+        max-width: 1.28rem;
+        width: 85%;
+        height: .38rem;
+        line-height: .38rem;
+        border: 0;
+        -webkit-border-radius: .03rem;
+        -moz-border-radius: .03rem;
+        border-radius: .03rem;
+        color: #ffffff;
+        font-size: .14rem;
+        outline: none;
+        cursor: pointer;
+        margin: 0 auto;
+    }
+    .bizForm-button-container span.span-btn button.btntype-1{
+        background: #2C82FC;
+    }
+    .bizForm-button-container span.span-btn  button.btntype-2,
+    .bizForm-button-container span.span-btn  button.btntype-3{
+        background: none;
+        border: 1px solid #2C82FC;
+        color: #2C82FC;
+    }
+    /*业务表单底部按钮开始*/
+    
+</style>
+<input type="hidden" id="formId" value="5e36fcd96964723f3b142b9d"/>
+
+    
+        
+            
+                <div class="bizForm-button-container">
+                    
+                        
+                            <span class="span-btn"><button class="btntype-1 submit-button" onclick="javascrtpt:window.location.href='sucess0.html'">提交</button></span>
+                            
+                        
+                        
+                    
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+     
+     
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+var mapTips = new Map()
+var arrTips = []
+
+//判断bizType的值
+function judgeType(type,subId,id){
+    //判断是否出现了收起的X按钮
+    // var isClose = document.querySelector('.close-correlation')
+    //判断是否在查看页面，没有收起展开按钮
+    // var isView = document.querySelector('.correlation-footer')
+    //相关操作收起时取消点击事件
+    // if(!ours.os.mobile){
+    //     return false
+    // }
+    if(type == 4 || type == 5 || type == 6 || type == 8 || type == 9 || type == 10){
+        return isAlert(subId)
+    }else if(type == 11){
+        return true
+    }else{
+        return isAlert(id)
+    }
+}
+function isAlert(bizId){
+    for(var i = 0;i< arrTips.length;i++){
+        if(bizId == arrTips[i]){
+            ours.alert(mapTips.get(arrTips[i]))
+            return false
+        }
+    }
+    return true
+}
+// var formWidth = $('.form-width-2')
+// if(formWidth.length > 0){
+//     $('.correlation-footer .box-hide').css('width','960px')
+// }
+</script>
+                </div>
+            
+            
+            
+        
+    
+    
+
+        
+    
+</div>
+<script type="text/javascript">
+    (function () {
+        var NS = ours.getNS();
+        NS.rightId = "5e36fcdc5ec96d4876da1ad8";
+    })();
+
+    //设置上传图片路径
+    //ours.uploadURL = "/fileMagic.do?method=doUpload&id=5e36fcd96964723f3b142b9d";
+</script>
+
+
+
+    <script>
+        // YgPN8p
+        ours.wxAddressBook.changeToOldDom();
+    </script>
+
+
+
+    <script>
+        // YgPN8jj
+        ours.wxAddressBook.changeToOldDom();
+        console.log("changeToOldDom3")
+    </script>
+
+    <script>
+        (function () {
+        ours.wxAddressBook.changeToOldDom();
+        console.log("changeToOldDom4")
+        })()
+    </script>
+
+
+
+
+
+</body>
+</html>

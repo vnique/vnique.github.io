@@ -1,0 +1,192 @@
+﻿
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <title>提交成功</title>
+    <style type="text/css">
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background: #f9f9f9;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Microsoft Yahei, Tahoma, Arial, Helvetica, "微软雅黑", "宋体";
+        }
+
+        .flow-pub-content {
+            border-top: 4px solid #5990cf;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            display: table;
+            text-align: center;
+            overflow: auto;
+        }
+
+        .flow-pub-content .pub-item {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .flow-pub-content .pub-item .pub-item-area {
+            width: 100%;
+        }
+
+        .flow-pub-content .pub-item img.pub-item-success-img {
+            display: block;
+            margin: 0 auto;
+            width: 85px;
+            height: 85px;
+        }
+
+        .flow-pub-content .pub-item .pub-item-success-info {
+            display: block;
+            margin: 0 auto;
+            font-size: 26px;
+            color: #515151;
+            margin-top: 10px;
+            word-break: break-all;
+            padding: 0 10px;
+        }
+
+        .flow-pub-content .pub-item .pub-item-success-qrcode {
+            display: block;
+            margin: 0 auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .flow-pub-content .pub-item .pub-item-success-qrcode img {
+            width: 180px;
+            height: 180px;
+        }
+
+        .flow-pub-content .pub-item .pub-item-success-qrcode .success-qrcode {
+            display: block;
+            width: 192px;
+            height: 192px;
+            margin: 0 auto;
+            border: 6px solid #fff;
+        }
+
+        .flow-pub-content .pub-item .pub-item-success-qrcode .qrcode-info {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 15px;
+            color: rgba(81, 81, 81, .7);
+        }
+
+        .flow-pub-content .pub-item .pub-item-success-qrcode .qrcode-info .anther-info {
+            font-size: 14px;
+            font-style: normal;
+        }
+
+        .flow-pub-content .pub-item .again-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .flow-pub-content .pub-item .again-btn button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: #5990cf;
+            padding: 0 15px;
+            min-width: 140px;
+            height: 40px;
+            color: #ffffff;
+            margin: 0 auto;
+            font-size: 16px;
+            text-align: center;
+            display: block;
+            border: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .pup_btn_l {
+            width: 100px;
+            height: 30px;
+            background: rgba(44, 130, 252, 1);
+            border-radius: 2px;
+            text-align: center;
+            line-height: 30px;
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        .view_history{
+            margin: 50px auto 0px;
+        }
+
+        .algin_fill{
+            margin: 20px auto 0px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="flow-pub-content">
+    <div class="pub-item">
+        <div class="pub-item-area">
+            <img class="pub-item-success-img" src="images/icon-publish.png">
+            <span class="pub-item-success-info"><span id="dateTime"></span>王园：430421199512027878<div>提交进门登记表成功</div></span>
+            
+            
+            
+            
+
+            
+
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script src="js/ours_phone.min.js"></script>
+<script type="text/javascript">
+    
+    $(".pup_btn_l").on("click", function () {
+        window.location.href =$(this).data("url");
+    })
+    var successCloseState = window.opener;
+    if(successCloseState == null){$("#successClose-div").hide()};
+    
+     Date.prototype.format = function (fmt) {
+            var o = {
+                "y+": this.getFullYear, //年
+                "M+": this.getMonth() + 1, //月份
+                "d+": this.getDate(), //日
+                "h+": this.getHours(), //小时
+                "m+": this.getMinutes(), //分
+                "s+": this.getSeconds() //秒
+            };
+            if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+            for (var k in o)
+                if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+            return fmt;
+        }
+		document.getElementById('dateTime').innerHTML = (new Date()).format('yyyy-MM-dd hh:mm:ss');
+</script>
+</body>
+</html>

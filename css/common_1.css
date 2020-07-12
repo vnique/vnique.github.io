@@ -1,0 +1,823 @@
+﻿@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100px;
+    -webkit-tap-highlight-color: transparent;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+}
+
+body {
+    font-size: .16rem;
+}
+/*底部技术信息开始*/
+.ours-support-info{
+    width: 100%;
+    padding: .12rem 0;
+    text-align: center;
+}
+.ours-support-info span{
+    background: url(../images/ours-logo-left-ico.png) left center no-repeat;
+    background-size: auto .22rem;
+    color: rgba(81,81,81,.6);
+    text-shadow: 0 0 .01rem rgba(255, 255, 255,.5);
+    height: .28rem;
+    line-height: .28rem;
+    padding-left: .26rem;
+    font-size: .14rem;
+    margin: 0 auto;
+    display: inline-block;
+}
+.ours-support-info a.complaint-info{
+    float: right;
+    height: .28rem;
+    display: inline-block;
+    line-height: .28rem;
+    color: rgba(81,81,81,.4);
+    font-size: .12rem;
+    text-decoration: none;
+    margin-right: .1rem;
+}
+.ours-support-info a.complaint-info:hover{
+    color: #2C82FC;
+}
+.ours-support-info:after{
+    content: "";
+    height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+/*底部技术信息结束*/
+/* 移动端盒模型布局 */
+.ours-common-page {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.ours-common-header {
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.ours-common-content {
+    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    zoom: 1;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    z-index: 9;
+}
+.ours-common-content .ours-common-content-area{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    z-index: 200;
+    -webkit-overflow-scrolling: touch;
+}
+.ours-common-footer {
+    position: relative;
+    display: block;
+    z-index: 5;
+}
+
+/* 移动端盒模型布局 */
+/* 移动端处理类盒模型布局 */
+.content-container-page {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content-container-header {
+    position: relative;
+    display: block;
+    z-index: 10;
+}
+
+.content-container-area {
+    -webkit-overflow-scrolling: touch;
+    zoom: 1;
+    position: relative;
+    z-index: 9;
+}
+
+.content-container-area .content-container-item{
+    overflow: auto;
+    z-index: 200;
+    -webkit-overflow-scrolling: touch;
+}
+.content-container-footer {
+    position: relative;
+    display: block;
+    z-index: 300;
+}
+.content-container-page.fixed-footer .content-container-area{
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.content-container-page.fixed-footer .content-container-area .content-container-item{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-overflow-scrolling: touch;
+}
+/* 移动端盒模型布局 */
+
+
+
+/*通用tabs*/
+.common-tabs-content{
+    background: #ffffff;
+    height: .44rem;
+    display: block;
+    padding: 0;
+    position: relative;
+    z-index: 100;
+}
+.common-tabs-content .common-tabs-area{
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.common-tabs-area a{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    height: .44rem;
+    line-height: .44rem;
+    overflow: hidden;
+    text-decoration: none;
+    color: rgba(81,81,81,1);
+    font-size: .16rem;
+    border-bottom: .02rem solid #e6e6e6;
+}
+.mouse-cursor-default {
+    cursor: default !important;
+    color: rgba(53, 57, 69, .3) !important;
+}
+.common-tabs-area a.active{
+    border-color: #2C82FC;
+    color: #2C82FC;
+}
+/*添加*/
+.common-add-btn{
+    background: #eef3fa;
+    padding: .12rem 0;
+    font-size: 0;
+    display: block;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+.common-add-btn:after{
+    content: '';
+    height: 200%;
+    position: absolute;
+    top: -50%;
+    bottom: -50%;
+    left: -50%;
+    right: -50%;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    z-index: -1;
+    /* border-top: 1px solid #e6e6e6; */
+}
+.common-add-btn i{
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    color: #2C82FC;
+    margin: 0 .03rem;
+    font-size: .16rem;
+}
+.common-add-btn i.add-btn-icon{
+    background-image: url("../images/common-add-icon.png");
+    background-repeat: no-repeat;
+    background-size: auto .16rem;
+    background-position: center;
+    width: .16rem;
+    height: .2rem;
+}
+.common-add-btn i.add-btn-info{
+    height: .2rem;
+    line-height: .2rem;
+}
+/*通用提示语*/
+.forms-prompt-tips{
+    display: none;
+}
+/*无数据*/
+.form-common-nodata,
+.ours-common-nodata{
+    background: url(../images/oursform-no-icon.png) center top no-repeat;
+    background-size: .6rem .75rem;
+    margin-top: .8rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: .14rem;
+    line-height: 1.8;
+    color: #aaa;
+    text-shadow: 0 1px 0 #fbfbfb;
+}
+/*弹出/下滑效果*/
+.boxUp-hide, .boxDown-hide {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    z-index: 2000;
+    width: 100%;
+    -webkit-transition: -webkit-transform .3s;
+    -moz-transition: -moz-transform .3s;
+    transition: transform .3s;
+}
+
+.boxUp-hide {
+    -webkit-transform: translate3d(0, -100%, 0);
+    -moz-transform: translate3d(0, -100%, 0);
+    -ms-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+    visibility: hidden;
+}
+
+.boxDown-hide {
+    -webkit-transform: translate3d(0, 100%, 0);
+    -moz-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    visibility: hidden;
+}
+
+.boxUp-show, .boxDown-show {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+}
+
+.boxDown-show1 {
+    -webkit-animation: boxDown-s .2s ease-in-out;
+    animation: boxDown-s .2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@-webkit-keyframes boxDown-s {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes boxDown-s {
+    0% {
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*从左往右*/
+.box-show-left {
+    -webkit-animation: boxLeft .2s ease-in-out;
+    animation: boxLeft .2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@-webkit-keyframes boxLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes boxLeft {
+    0% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        -o-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*从右往左*/
+.box-show-right {
+    -webkit-animation: boxRight .2s ease-in-out;
+    animation: boxRight .2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@-webkit-keyframes boxRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes boxRight {
+    0% {
+        -webkit-transform: translate3d(100%, 0, 0);
+        -o-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*从下往上*/
+.box-show-down {
+    -webkit-animation: boxDown .2s ease-in-out;
+    animation: boxDown .2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    visibility: visible;
+}
+
+@-webkit-keyframes boxDown {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes boxDown {
+    0% {
+        -webkit-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/*从上往下*/
+.box-show-up {
+    -webkit-animation: boxUp .2s ease-in-out;
+    animation: boxUp .2s ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    top: 0;
+    bottom: auto !important;
+}
+
+@-webkit-keyframes boxUp {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        -o-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes boxUp {
+    0% {
+        -webkit-transform: translate3d(0, -100%, 0);
+        -o-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@-webkit-keyframes DivZoom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes DivZoom {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.sZoom {
+    -webkit-animation: DivZoom 0.5s ease-in-out;
+    animation: DivZoom 0.5s ease-in-out;
+}
+
+@-webkit-keyframes topNarrow {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -130%, 0);
+        -moz-transform: translate3d(0, -130%, 0);
+        -ms-transform: translate3d(0, -130%, 0);
+        transform: translate3d(0, -130%, 0);
+    }
+}
+
+@keyframes topNarrow {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(0, -130%, 0);
+        -moz-transform: translate3d(0, -130%, 0);
+        -ms-transform: translate3d(0, -130%, 0);
+        transform: translate3d(0, -130%, 0);
+    }
+}
+
+@-webkit-keyframes midNarrow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes midNarrow {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes botNarrow {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 200%, 0);
+        -moz-transform: translate3d(0, 200%, 0);
+        -ms-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+}
+
+@keyframes botNarrow {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        -webkit-transform: translate3d(0, 200%, 0);
+        -moz-transform: translate3d(0, 200%, 0);
+        -ms-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+    }
+}
+
+.toastop {
+    -webkit-animation: topNarrow 1s ease-in-out;
+    animation: topNarrow 1s ease-in-out;
+    /*top: 0;*/
+}
+
+.toastmid {
+    -webkit-animation: midNarrow 1s ease-in-out;
+    animation: midNarrow 1s ease-in-out;
+    /*top: 40%;*/
+}
+
+.toastbot {
+    -webkit-animation: botNarrow 1s ease-in-out;
+    animation: botNarrow 1s ease-in-out;
+    /*bottom: .2rem;*/
+}
+
+@-webkit-keyframes shake {
+    0%, 100% {
+        -webkit-transform: translate3d(0, 0, 0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        -webkit-transform: translate3d(-10px, 0, 0)
+    }
+    20%, 40%, 60%, 80% {
+        -webkit-transform: translate3d(10px, 0, 0)
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translate3d(0, 0, 0)
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translate3d(-10px, 0, 0)
+    }
+    20%, 40%, 60%, 80% {
+        transform: translate3d(10px, 0, 0)
+    }
+}
+
+.shake {
+    display: inline-block;
+    -webkit-animation: shake .8s both;
+    animation: shake .8s both;
+}
+
+/*
+输入框错误边框高亮提示*/
+.error-border-highlight {
+    border: 1px solid #e4393c !important;
+}
+
+/*
+隐藏*/
+.display_none {
+    display: none;
+}
+/*通用下拉提示窗口模版--开始*/
+.common-ui-tips{
+    background: #ffffff;
+    width: 3.6rem;
+    padding: .02rem;
+    -webkit-border-radius: .03rem;
+    -moz-border-radius: .03rem;
+    border-radius: .03rem;
+    box-shadow: 0 0 .08rem rgba(0,0,0,.1);
+    position: relative;
+    z-index: 10;
+}
+.common-ui-tips .common-ui-tips-triangle {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -.16rem;
+    left: 50%;
+    margin-left: -.08rem;
+}
+.common-ui-tips .common-ui-tips-triangle em,
+.common-ui-tips .common-ui-tips-triangle i.tips-triangle-arrow {
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    border: .08rem solid transparent;
+    border-style: dashed dashed solid;
+}
+.common-ui-tips .common-ui-tips-triangle i.tips-triangle-arrow {
+    border-bottom-color: #fff;
+    top: 0;
+}
+.common-ui-tips .common-ui-tips-triangle em {
+    border-bottom-color: rgba(0,0,0,.07);
+    top: -1px;
+}
+
+.option-btn{
+    width: 100%;
+}
+.option-btn dl{
+    width: 100%;
+}
+.option-btn dl dd{
+    width: 100%;
+    padding: 0 .08rem;
+    height: .3rem;
+    line-height: .3rem;
+    font-size: .14rem;
+    white-space: nowrap;
+    color: rgba(81,81,81,.8);
+}
+.option-btn dl dd:hover{
+    background: #e6e6e6;
+}
+.option-btn dl dd.delete-app:hover{
+    background-color: #e17366;
+    color: #ffffff;
+}
+/*通用下拉提示窗口模版--结束*/
+/*单选&多选公用*/
+.checkbox-wrapper, .radio-button-wrapper {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: .2rem;
+    height: .2rem;
+    line-height: .16rem;
+    text-align: center;
+    vertical-align: middle;
+    margin: -.03rem .05rem 0 0;
+}
+
+.selected-icon {
+    cursor: pointer;
+}
+
+.radio-button-wrapper input[type=radio], .checkbox-wrapper input[type=checkbox], .checkbox-wrapper input[type=radio] {
+    position: absolute;
+    left: -99.99rem;
+    visibility: hidden;
+}
+
+.checkbox-wrapper input[type="checkbox"] + .selected-icon, .checkbox-wrapper input[type="radio"] + .selected-icon, .radio-button-wrapper input[type="radio"] + .selected-icon {
+    display: inline-block;
+    background: #FFF;
+    border: 1px solid #cccccc;
+}
+
+.checkbox-wrapper input[type="checkbox"] + .selected-icon:after, .checkbox-wrapper input[type="radio"] + .selected-icon:after, .radio-button-wrapper input[type="radio"] + .selected-icon:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .selected-icon, .checkbox-wrapper input[type="radio"]:checked + .selected-icon, .radio-button-wrapper input[type="radio"]:checked + .selected-icon {
+    background-color: #2C82FC;
+    border-color: #2C82FC;
+}
+
+/*单选*/
+.radio-button-wrapper input[type="radio"] + .selected-icon {
+    width: .2rem;
+    height: .2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.radio-button-wrapper input[type="radio"] + .selected-icon:after {
+    background: #FFF;
+    width: .2rem;
+    height: .2rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.radio-button-wrapper input[type="radio"]:checked + .selected-icon:after {
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+}
+
+/*多选*/
+.ours-checkbox-1 input[type=checkbox].error-border-highlight + .checkbox {
+    border-color: #e4393c !important;
+}
+
+.checkbox-wrapper input[type="checkbox"] + .selected-icon, .checkbox-wrapper input[type="radio"] + .selected-icon {
+    width: .2rem;
+    height: .2rem;
+    border-radius: .02rem;
+}
+
+.checkbox-wrapper input[type="checkbox"]:checked + .selected-icon:after, .checkbox-wrapper input[type="radio"]:checked + .selected-icon:after, .radio-button-wrapper input[type="checkbox"]:checked + .selected-icon:after {
+    border-bottom-color: #FFF;
+    border-right-color: #FFF;
+}
+
+.checkbox-wrapper input[type="checkbox"] + .selected-icon:after, .checkbox-wrapper input[type="radio"] + .selected-icon:after, .radio-button-wrapper input[type="checkbox"] + .selected-icon:after {
+    top: 1px;
+    left: -1px;
+    width: .06rem;
+    height: .11rem;
+    border: .02rem solid transparent;
+    -webkit-transform: rotate(43deg);
+    -ms-transform: rotate(43deg);
+    -o-transform: rotate(43deg);
+    transform: rotate(43deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+
+.radio-button-wrapper input[type="radio"]:disabled + .selected-icon {
+    background-color: #efefef;
+    border-color: #bbbbbb;
+}
+
+.radio-button-wrapper input[type="radio"]:checked:disabled + .selected-icon {
+    background-color: #efefef;
+    border-color: #bbbbbb;
+}
+
+.radio-button-wrapper input[type="radio"]:checked:disabled + .selected-icon:after {
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+}
+/*复制发起*/
+.bizForm-button-container span.span-btn  button.btntype-4{
+    background: url("../images/formore-option-icon.png") center no-repeat !important;
+    background-size: auto .22rem !important;
+    border: 1px solid #2C82FC;
+    color: #2C82FC;
+    font-size: 0;
+}

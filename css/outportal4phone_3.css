@@ -1,0 +1,136 @@
+﻿body {
+    width: 100%;
+    height: 100% !important;
+}
+.outPortal-content-index-baner{
+    border-radius: 10px;
+    height: 2.8rem;
+    background-image: url('../images/phone-banner-3.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.outPortal-box {
+    display: flex;
+    display: -webkit-flex;
+    height: 100%;
+    flex-direction: column;
+    padding-bottom: 1.4rem;
+}
+
+.outPortal-content-index {
+    padding: .24rem .32rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 1rem;
+}
+
+.outPortal-footer {
+    width: 100%;
+    height: 1rem;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0px;
+    background: #fafafa;
+}
+
+.outPortal-footer-nav {
+    flex: 1;
+    position: relative;
+}
+
+.outPortal-footer-nav #index,.outPortal-footer-nav #mine {
+    width: .4rem;
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    transform: translate(-50%, -50%);
+}
+
+.outPortal-footer-nav>a>span {
+    position: absolute;
+    left: 50%;
+    top: 78%;
+    transform: translate(-50%, -50%);
+    color: #b7b7b7;
+    font-size: .26rem;
+    width: 77%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+.outPortal-footer-nav>a>.active{
+    color: #2C82FC;
+}
+.index-column{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    margin-top: .66rem;
+}
+.index-column-name {
+    font-size: .35rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 700;
+    color: rgba(81, 81, 81, 1);
+    line-height: .37rem;
+    border-left:.06rem solid #2C82FC ;
+    padding-left: .2rem;
+}
+.index-column-more{
+     font-size: .28rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(81, 81, 81, 1);
+    line-height: .44rem;
+}
+.column-form-img{display: inline-block;}
+.column-form-name{
+    display: inline-block;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: .19rem;
+    font-size:.28rem;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:#515151;
+    line-height:.28rem;
+    opacity: .8;
+}
+.column-form-firstline{
+    width:100%;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    height: 5.4rem;
+    overflow: hidden;
+}
+.column-form-item{
+    width:10rem;
+    margin-top: .2rem;
+    display: -webkit-flex;
+    display: flex;
+    height: 1.1rem;
+    align-items: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.column-form-arrow{
+    display: none;
+}
+.column-form-describe{
+    /* display: none; */
+    font-size: .28rem;
+    color:#B7B7B7;
+    margin-top: 0.1rem;
+    width: 6rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.icon-size-20{font-size: 24px;}

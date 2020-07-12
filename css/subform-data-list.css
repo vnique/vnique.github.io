@@ -1,0 +1,2110 @@
+﻿@charset "UTF-8";
+.oursApp-frame-info .ours-common-area{
+    border: 0;
+}
+.oursApp-frame-info .ours-common-area .ours-common-top{
+    display: none;
+}
+.oursApp-frame-info .ours-btns-area button.btns-info{
+    margin-right: 10px;
+}
+
+.oursApp-frame-info .ours-class-condition{
+    min-width: 180px !important;
+}
+/*.oursApp-frame-info .search-container>.ours-class-condition{
+    width: 200px !important;
+}*/
+.oursApp-frame-info .search-container>.ours-class-condition .ours-class-datepicker-1 input,
+.oursApp-frame-info .search-container>.ours-class-condition .ours-class-datepicker input{
+    padding-right: 10px;
+}
+/* 总览数据列表 */
+.summary-frame-info .ours-common-area{
+	width:100%;
+	min-height: inherit;
+    border: 0;
+    margin:0;
+}
+.summary-frame-info .ours-common-area .ours-common-top{
+    display: none;
+}
+.summary-frame-info .ours-btns-area button.btns-info{
+    padding: 0;
+    margin-right: 0;
+}
+
+/* 总览数据列表 */
+i {
+    font-style: normal;
+}
+
+.forms-design-area {
+    background: none;
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-align:left;
+}
+.forms-design-area-full {
+    padding-top: 0px;
+}
+
+.form-udata-title {
+    width: 100%;
+    line-height: 50px;
+    font-size: 23px;
+    color: #333333;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.form-udata-title a.form-udata-search {
+    background: #ffffff;
+    display: block;
+    float: right;
+    width: 16%;
+    min-width: 190px;
+    height: 30px;
+    border: 1px solid rgb(89, 143, 207);
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.form-udata-title a.form-udata-search input {
+    height: 100%;
+    width: 84%;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    float: right;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.form-udata-title a.form-udata-search span {
+    display: block;
+    height: 100%;
+    line-height: 22px;
+    font-weight: bold;
+    width: 16%;
+    text-align: center;
+    color: rgb(89, 143, 207);
+    float: right;
+}
+
+.form-udata-title a.form-udata-searchh span:hover {
+    color: #0CF;
+}
+
+.form-udata-toolbar {
+    background: #ffffff;
+    width: 100%;
+    height: 57px;
+    padding: 12px 10px;
+    position: relative;
+    z-index: 110;
+}
+
+.form-udata-toolbar span.span-btn {
+    background: #ffffff;
+    padding: 5px 8px;
+    float: left;
+    border: 1px solid #2C82FC;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #2C82FC;
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.form-udata-toolbar span:hover {
+    background: #2C82FC;
+    color: #ffffff;
+}
+.form-udata-toolbar span.form-udata-disable{
+     background:#b8b8b8;
+     border-color:#b8b8b8;
+     color: #eee;
+}
+
+.form-udata-icon{
+    background: url("../images/form-detail-ico32.png") no-repeat;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-top: 1px;
+    float: left;
+}
+
+.form-udata-toolbar span .form-udata-add {
+    background-position: 0 -175px;
+}
+
+.form-udata-toolbar span .form-udata-edit {
+    background-position: -72px -175px;
+}
+
+.form-udata-toolbar span .form-udata-dele {
+    background-position: -18px -175px;
+}
+
+.form-udata-toolbar span .form-udata-leadin {
+    background-position: -36px -175px;
+}
+
+.form-udata-toolbar span .form-udata-leadout {
+    background-position: -54px -175px;
+}
+
+.form-udata-toolbar span .form-udata-see {
+    background-position: -90px -175px;
+}
+.form-udata-toolbar span .form-udata-batch-dowm {
+    background-position: -215px -177px;
+}
+.form-udata-toolbar span .form-udata-log {
+    background-position: -198px -175px;
+}
+.form-udata-toolbar span:hover .form-udata-log {
+    background-position: -198px -147px;
+}
+.form-udata-toolbar span:hover .form-udata-add {
+    background-position: 0 -147px;
+}
+
+.form-udata-toolbar span:hover .form-udata-edit {
+    background-position: -72px -147px;
+}
+
+.form-udata-toolbar span:hover .form-udata-dele {
+    background-position: -18px -147px;
+}
+
+.form-udata-toolbar span:hover .form-udata-leadin {
+    background-position: -36px -147px;
+}
+
+.form-udata-toolbar span:hover .form-udata-leadout {
+    background-position: -54px -147px;
+}
+
+.form-udata-toolbar span:hover .form-udata-see {
+    background-position: -90px -147px;
+}
+.form-udata-toolbar span:hover .form-udata-batch-dowm {
+    background-position: -215px -149px;
+}
+.form-udata-toolbar span:hover .form-udata-log {
+    background-position: -198px -147px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-add,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-add {
+    background-position: 0 -203px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-edit,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-edit {
+    background-position: -72px -203px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-dele,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-dele {
+    background-position: -18px -203px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-leadin,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-leadin {
+    background-position: -36px -203px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-leadout,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-leadout {
+    background-position: -54px -203px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-see,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-see {
+    background-position: -90px -203px;
+}
+.form-udata-toolbar span.form-udata-disable .form-udata-batch-dowm,
+.form-udata-toolbar span:hover.form-udata-disable .form-udata-batch-dowm {
+    background-position: -215px -205px;
+}
+
+.form-udata-top-option {
+    position: relative;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+/** 运行态页面于静态页面不一样，多余的属性已注释 by linsong */
+.form-udata-top-option-list {
+    /* background: #ffffff; */
+    width: 236px;
+    padding: 4px 4px;
+    /* padding-left: 10px;
+    position: absolute;
+    top: 40px;
+    right: -17px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 0px 1px 1px #cccccc; */
+    z-index: 3;
+}
+
+.form-udata-top-option-list ul, .udata-right-choice-item-list ul {
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.form-udata-top-option-list ul li, .udata-right-choice-item-list ul li {
+    position: relative;
+    height: 26px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 4px 0;
+    font-size: 14px;
+}
+
+.form-udata-top-option-time {
+    background: #ffffff;
+    width: 466px;
+    height: 326px;
+    position: absolute;
+    top: 40px;
+    left: -187px;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    box-shadow: 0px 1px 1px #cccccc;
+    padding: 8px 8px;
+}
+
+.form-udata-top-option-timearea {
+    width: 100%;
+    height: 260px;
+}
+
+/** 条件选择弹窗已换成表单弹窗控件 by ls */
+
+
+.form-updata-triangle {
+    display: block;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-top: solid 1px #e5e5e5;
+    border-right: solid 1px #e5e5e5;
+    position: absolute;
+    top: -5px;
+    right: 27px;
+    margin-left: -4px;
+    z-index: 3;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.form-udata-times, .form-udata-screen, .form-udata-list, .form-udata-fullscreen,.form-udata-view-data-qrcode, .form-udata-map {
+    background: url("../images/form-detail-ico32.png") no-repeat;
+    width: 32px;
+    height: 32px;
+    font-style: normal;
+    display: inline-block;
+    margin: 0px 3px;
+    cursor: pointer;
+    position: relative;
+    float: left;
+}
+
+.form-udata-times {
+    background-position: -160px 0px;
+    margin-left: 30px;
+}
+
+.form-udata-screen {
+    background-position: -192px 0px;
+    float: right;
+}
+
+.form-udata-list {
+    background-position: -224px 0px;
+    margin-left: 10px;
+}
+
+.form-udata-fullscreen {
+    background-position: -256px 0px;
+}
+.form-udata-view-data-qrcode{
+    background-position: -32px -64px;
+}
+.form-udata-map{
+    background-position: -64px -64px;
+}
+.form-udata-times:hover {
+    background-position: -160px -32px;
+}
+
+.form-udata-screen:hover {
+    background-position: -192px -32px;
+}
+
+.form-udata-list:hover {
+    background-position: -224px -32px;
+}
+
+.form-udata-fullscreen:hover {
+    background-position: -256px -32px;
+}
+.form-udata-view-data-qrcode:hover{
+    background-position: -32px -96px;
+}
+.form-udata-map:hover{
+    background-position: -64px -96px;
+}
+.form-udata-tablearea {
+    background: #ffffff;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+/*.form-udata-tablearea .form-grid-table{
+    padding: 0 10px;
+}*/
+.form-udata-content {
+    width: 100%;
+    padding-bottom: 10px;
+    float: left;
+    overflow: hidden;
+    overflow-x: auto;
+    position: relative;
+}
+
+.udata-leftfixed {
+    background: #333;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 3;
+    display: none;
+}
+
+.form-udata-content-paging {
+    background: #ffffff;
+    width: 100%;
+    font-size: 14px;
+    color: #333333;
+    float: left;
+    text-align: right;
+    /*padding: 10px 0;*/
+}
+
+/* table {
+    width: 100%;
+    border: 0;
+}
+th,td {
+    text-align: center;
+    color: rgba(81,81,81,.8);
+}
+th{
+    background: #eef4fa;
+    color: #515151;
+
+}
+
+.form-udata-content table,
+.form-udata-content table tr th,
+.form-udata-content table tr td,
+.form-udata-tablearea table,
+.form-udata-tablearea table tr th span,
+.form-udata-tablearea table tr td span {
+    border-collapse: collapse;
+    font-size: 14px;
+
+}
+
+.form-udata-content table tr th,
+.form-udata-content table tr td,
+.form-udata-tablearea table tr th span,
+.form-udata-tablearea table tr td span {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+table tr th img {
+    vertical-align: middle;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.form-udata-content table, .form-udata-tablearea table {
+    background: #ffffff;
+    width: 100%;
+    padding: 0;
+    float: left;
+
+}
+
+.form-udata-content table tr th, .form-udata-tablearea table tr th span {
+    background: #eef4fa;
+    height: 50px;
+    line-height: 50px;
+    min-width: 150px;
+    max-width: 300px;
+    border: none;
+    text-align: left;
+    padding: 0 8px;
+}
+
+.form-udata-content table tr td, .form-udata-tablearea table tr td span {
+    height: 40px;
+    line-height: 40px;
+    min-width: 150px;
+    max-width: 300px;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 0 8px;
+}
+.form-udata-tablearea table tr th span,.form-udata-tablearea table tr td span{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.form-udata-tablearea table tr th span p,.form-udata-tablearea table tr td span p{
+    display: inline-block;
+}
+.form-udata-tablearea table tr th span p:nth-child(2),.form-udata-tablearea table tr td span p:nth-child(2){
+    margin: 0 3px;
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.form-udata-tablearea table tr th span p:nth-child(1),.form-udata-tablearea table tr td span p:nth-child(1){
+    max-width: 280px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.form-udata-tablearea table tr th span p i,.form-udata-tablearea table tr td span p i{
+    font-style: normal;
+    margin-right: 3px;
+}
+.form-udata-tablearea table tr th.udata-fixed-width, .form-udata-tablearea table tr td.udata-fixed-width {
+    min-width:inherit;
+    max-width: none;
+    width: 80px !important;
+}
+.form-udata-tablearea table tr th.udata-fixed-width span, .form-udata-tablearea table tr td.udata-fixed-width span {
+    max-width: 80px !important;
+    min-width: 80px !important;
+    width: 80px !important;
+    text-align: center;
+}
+.form-udata-tablearea table tr th:nth-child(2).udata-fixed-width span,
+.form-udata-tablearea table tr td:nth-child(2).udata-fixed-width span{
+    text-align: left;
+}
+.form-udata-tablearea table tr th:nth-child(1){
+    background: #eef4fa
+}
+.form-udata-content table tr th:nth-child(1), .form-udata-content table tr td:nth-child(1) {
+    max-width: 64px !important;
+    min-width: 64px !important;
+}
+
+.form-udata-content table tr th:nth-child(2), .form-udata-content table tr td:nth-child(2) {
+    max-width: 80px !important;
+    min-width: 80px !important;
+}
+
+.form-udata-tablearea table tr:nth-child(2n) {
+    background: #f6f6f6;
+}
+
+.form-udata-tablearea table tr:hover {
+    background: #eeeeee;
+} */
+
+
+.form-udata-addarea {
+    background: #ffffff;
+    width: 560px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -290px;
+    margin-top: -240px;
+}
+
+.form-udata-addarea-mid {
+    width: 100%;
+    height: 370px;
+    float: left;
+    overflow-y: auto;
+}
+
+.form-udata-addarea-mid ul {
+    padding: 10px 20px;
+    float: left;
+    width: 100%;
+}
+
+.form-udata-addarea-mid ul li {
+    width: 100%;
+    float: left;
+    margin-bottom: 7px;
+}
+
+.form-udata-addarea-mid ul li label {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.form-udata-addarea-mid ul li input[type="text"] {
+    width: 75%;
+    float: left;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    padding: 5px 2px;
+}
+
+.form-udata-addarea-mid ul li input[type="text"]:focus {
+    border: 1px solid #5990d0;
+}
+
+.form-udata-addarea-footer {
+    width: 100%;
+    padding: 19px 0;
+    float: left;
+    text-align: center;
+}
+
+.form-udata-addarea-button {
+    width: 100%;
+    padding: 10px 0;
+    float: left;
+    text-align: center;
+}
+
+.form-udata-close {
+    background: url(../images/list-newform-close.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.form-submit, .form-cancel {
+    width: 100px;
+    height: 32px;
+    margin: 0 15px;
+    line-height: 32px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-submit {
+    background: #2C82FC;
+    color: #ffffff;
+}
+
+.form-cancel {
+    background: #e5e5e5;
+    color: #333333;
+}
+
+.form-udata-addarea-mid-title {
+    background: #5990d0;
+    width: 100%;
+    padding: 13px 0;
+    float: left;
+    color: #fff;
+    text-align: center;
+}
+
+.form-udata-addarea-mid-title span {
+    display: inline-block;
+    width: 100%;
+}
+
+.form-udata-title-words {
+    font-size: 24px;
+}
+
+.form-udata-title-infomation {
+    font-size: 14px;
+}
+
+input.detail-checkbox {
+    visibility: hidden;
+    width: 10px;
+    height: 10px;
+    border: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input.detail-checkbox + label {
+    cursor: pointer;
+    color: #666666;
+    display: inline-block;
+    word-break: break-all;
+    word-wrap: break-word;
+    display: inline-block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+input.detail-checkbox + label:before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #9D9D9D;
+    border-radius: 1px;
+    -webkit-transition: 240ms;
+    -o-transition: 240ms;
+    transition: 240ms;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    left: 0px;
+    top: 9px;
+}
+
+input.detail-checkbox + label:after {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 5px;
+    display: none;
+    width: 5px;
+    height: 11px;
+    border: 2px solid #fff;
+    border-top-width: 0;
+    border-left-width: 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+input.detail-checkbox:checked + label:before {
+    background-color: #588FD0;
+    border-color: #588FD0;
+}
+
+input.detail-checkbox:checked + label:after {
+    display: block;
+}
+
+input.detail-checkbox + label:focus:before {
+    border-color: #2196f3;
+}
+
+/*����&����Excel*/
+.form-udata-leadin-excel {
+    background: #ffffff;
+    width: 490px;
+    height: 160px;
+    text-align: center;
+}
+
+.form-udata-midexcel {
+    width: 100%;
+    float: left;
+}
+
+.form-udata-excel {
+    width: 156px;
+    height: 90px;
+    display: inline-block;
+    background: url(../images/form-udata-ico-excel.png) #5990d0 no-repeat;
+    background-position: center 15px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 50px;
+    cursor: pointer;
+    float: left;
+    margin-top: 20px;
+    margin-left: 167px;
+    margin-bottom: 10px;
+}
+
+.form-udata-midexcel a {
+    margin-left: 10px;
+    vertical-align: bottom;
+    color: #5990d0;
+    float: left;
+    margin-top: 90px;
+}
+
+.form-udata-midexcel a:hover {
+    color: #000000;
+}
+
+.form-udata-leadin-excel p {
+    font-size: 12px;
+    color: #888888;
+}
+
+/*�ϴ���*/
+.form-udata-excel-loading {
+    background: url(../images/form-udata-ico-exceloading.png) left center no-repeat;
+    width: 360px;
+    height: 43px;
+    margin-top: 50px;
+    position: relative;
+    float: left;
+    margin-left: 35px;
+    padding-left: 40px;
+}
+
+.form-udata-excel-loading p {
+    font-size: 16px;
+    color: #333333;
+    text-align: left;
+    margin-bottom: 4px;
+    float: left;
+}
+
+.form-udata-loading-bot {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid #cccccc;
+    position: absolute;
+    top: 30px;
+}
+
+.form-udata-loading-roll {
+    background: #2C82FC;
+    width: 60%;
+    height: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: absolute;
+    top: 30px;
+    float: left;
+}
+
+.form-udata-loading-num {
+    position: absolute;
+    right: -70px;
+    top: 26px;
+    font-size: 12px;
+    color: #666666;
+}
+
+/*分页样式*/
+.form-udata-page {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: 20px;
+    padding: 10px 0;
+}
+
+.form-udata-page .n {
+    height: 24px;
+    padding: 0 18px;
+    color: #bbb;
+}
+
+.form-udata-page a {
+    cursor: pointer;
+    color: #2C82FC;
+}
+
+.form-udata-page a, .form-udata-page strong {
+    display: inline-block;
+    vertical-align: text-bottom;
+    height: 24px;
+    text-align: center;
+    line-height: 22px;
+    text-decoration: none;
+    overflow: hidden;
+    background: #ffffff;
+
+}
+
+.form-udata-page .pc {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.form-udata-page strong .pc {
+    border: 0;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #2C82FC;
+    background: #2C82FC;
+    color: #ffffff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.form-udata-page span {
+    display: block;
+}
+
+strong {
+    font-weight: normal;
+}
+
+.form-udata-page .n:hover {
+    color: #2C82FC;
+}
+
+.form-udata-page a:hover .pc {
+    border: 1px solid #2C82FC;
+}
+
+.img-control-data {
+    border: 1px solid #e6e6e6;
+    margin: 5px;
+}
+
+/*时间*/
+.ours-class-datepicker-2 {
+    position: relative;
+}
+
+.ours-class-datepicker-2 input {
+    width: 100%;
+    padding: 6px 3px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+    font-size: 14px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.ours-class-datepicker-2 input:focus {
+    border: 1px solid #2C82FC;
+}
+
+.ours-datetime-icon {
+    background: url(../images/datetime-ico.png) rgba(255, 255, 255, .6) right center no-repeat;
+}
+
+.ours-datetime-container {
+    background: url(../images/datetime-ico.png) #ffffff no-repeat;
+    background-position: 7px 6px;
+    width: 163px;
+    height: 36px;
+    position: absolute;
+    right: 0;
+    top: 36px;
+    padding-left: 40px;
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 30;
+}
+
+.ours-datetime-container .ours-datetime-item {
+    background: url(../images/datetime-triangle-ico.png) no-repeat;
+    background-size: 17px 11px;
+    width: 17px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    top: -10px;
+    right: 5px;
+}
+
+.ours-class-datepicker-2 div select {
+    width: 50px !important;
+    height: auto !important;
+    padding: 1px 0px !important;
+    border: 1px solid #d1d5da !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    border-radius: 2px !important;
+    margin: 5px 3px 0 3px !important;
+}
+
+.single-item-container {
+    float: right;
+}
+
+.single-item-container .single-item {
+    float: right;
+    margin-right: 5px;
+}
+
+/****** 通用样式 *******/
+select {
+    min-height: 32px;
+    outline: none;
+    font-size: 14px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cccccc;
+}
+
+select:focus {
+    border: 1px solid #2C82FC;
+}
+
+.ours-button {
+    background: #2C82FC;
+    color: #ffffff;
+    padding: 5px 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.ours-button:hover {
+    background: #63a4ed;
+}
+
+.form-design {
+    background-color: #ffffff;
+    width:100%;
+    margin-top: 10px;
+}
+.common-tabs-content ~ .form-general-area .form-design{
+    margin-top: 0;
+}
+.form-udata-top-right {
+    float: right;
+}
+
+.udata-right-choice {
+    width: 320px;
+    height: 34px;
+    padding: 0 6px;
+    border: 1px solid #2C82FC;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    float: left;
+    margin-right: 17px;
+    position: relative;
+}
+
+.choice-all-info {
+    background: none;
+    width: 280px;
+    height: 30px;
+    border: 0;
+    border-right: 1px solid #e5e5e5;
+    float: left;
+    font: 14px/1.5 tahoma, arial, 'hiragino sans gb', 'microsoft yahei', sans-serif;
+    cursor: pointer;
+}
+
+.choice-all-info:focus {
+    border: 0;
+    border-right: 1px solid #e5e5e5;
+}
+
+.udata-right-choice-item {
+    width: 130px;
+    float: left;
+    height: 32px;
+    padding: 0 4px;
+    font-size: 14px;
+    position: relative;
+}
+
+.udata-right-choice-item input {
+    width: 100%;
+    height: 32px;
+    line-height: 24px;
+    border: 0;
+    outline: none;
+    font: 14px/1.5 'microsoft yahei', sans-serif;
+}
+
+.udata-right-choice i.icons {
+    font-style: normal;
+    font-size: 16px;
+    color: #2C82FC;
+    font-weight: bold;
+    position: absolute;
+    right: 7px;
+    top: 2px;
+    cursor: pointer;
+}
+
+.udata-right-choice-item-list {
+    background: #ffffff;
+    width: 138px;
+    padding: 4px 6px;
+    padding-left: 10px;
+    position: absolute;
+    top: 35px;
+    right: 14px;
+    border: 1px solid #2C82FC;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 3;
+}
+
+.udata-timepicker {
+    width: 100%;
+    height: 32px;
+}
+
+.udata-timepicker input.udata-hours, .udata-timepicker input.udata-min {
+    width: 40%;
+    height: 32px;
+    line-height: 24px;
+    border: 0;
+    outline: none;
+    font: 14px/1.5 tahoma, arial, 'hiragino sans gb', 'microsoft yahei', sans-serif;
+    float: left;
+}
+
+.udata-timepicker i.udata-fege {
+    width: 20%;
+    float: left;
+    color: #333;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+}
+
+/** 数据列表搜索文本框样式 by linsong */
+.value-search {
+    cursor: pointer;
+    display: none;
+}
+.ours-class-multiselect label{
+    margin-right: 8px;
+    margin-top: 8px;
+    display: inline-block;
+}
+.ours-class-multiselect label ~ input.ours-input-others{
+    margin-left: 0;
+}
+
+/** 图片单元格样式  by linsong*/
+.imageCellContent:hover{
+    cursor: pointer;
+    color: #2C82FC;
+    text-decoration:underline;
+}
+.imageCellContent{
+    color:#515151;
+}
+
+
+/*.form-general-area{
+    overflow-y: hidden !important;
+}*/
+
+/*暂无数据*/
+.udataNo{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #515151;
+    margin-bottom: 100px;
+}
+.udataNo img{
+    display: block;
+    margin: 80px auto;
+    margin-bottom: 20px;
+}
+@media screen and (max-width: 1024px) {
+    .form-udata-toolbar span.span-btn i{
+        display: none !important;
+    }
+    /*.ours-class-condition{
+        width: 150px !important;
+    }*/
+    .form-udata-list {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width: 1230px) {
+    .form-udata-toolbar span.span-btn i{
+        display: none !important;
+    }
+
+    .form-udata-list {
+        margin-left: 5px;
+    }
+}
+.form-udata-role{
+    padding-right: 15px;
+    float: left;
+    margin-right: 15px;
+    border-right: 1px solid #cdddf1;
+   /*  display:none; */
+}
+.form-udata-role div.show-role{
+    float: left;
+    display: inline-block;
+    margin-right: 0;
+    position: relative;
+}
+
+.form-udata-role div.show-role span{
+    background: #2C82FC;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin: 0;
+    display: block;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.form-udata-role div.show-role span:hover{
+    background: #63a4ed;
+}
+.form-udata-role div.show-role span i.down-arrow{
+    background:url("../images/udata-down-arrow.png");
+    width: 11px;
+    height: 7px;
+    margin-left: 7px;
+    display: inline-block;
+}
+.form-udata-role div.show-role ul{
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 31px;
+    left: 0;
+    border: 1px solid #cdddf1;
+    border-top: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 5px 0;
+    z-index: 40;
+}
+.form-udata-role div.show-role ul li{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    color: #515151;
+    text-align: center;
+    cursor: pointer;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    padding: 0 6px;
+}
+.form-udata-role div.show-role ul li:hover{
+    background: #2C82FC;
+    color: #ffffff;
+}
+
+
+
+.qrcode-layer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 240;
+    display: none;
+}
+.qrcode-area{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.qrcode-choose{
+    width: auto;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -274px;
+}
+.qrcode-choose span{
+     min-width: 150px;
+     height: 34px;
+     line-height: 34px;
+     display: inline-block;
+     font-size: 14px;
+     color: #b7b7b7;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+    margin: 0 15px;
+ }
+.qrcode-choose span.active{
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+.qrcode img {
+	border: 8px solid #ffffff;
+}
+.qrcode-layer .qrcode-info {
+	width: 100%;
+	color: #ffffff;
+	text-align: center;
+	font-size: 14px;
+}
+
+/** 重构简单查询条件样式 */
+.ours-class-condition{
+	display: inline-block;
+	vertical-align: top;
+}
+.ours-class-condition-1 .ours-class-condition{
+	display: block;
+	vertical-align: inherit;
+}
+.search-container{
+	float:right;
+}
+
+.form-udata-role{
+    padding-right: 10px;
+    float: left;
+    margin-right: 10px;
+    border-right: 1px solid #cdddf1;
+}
+.form-udata-role div.show-role{
+    float: left;
+    display: inline-block;
+    margin-right: 0;
+    position: relative;
+}
+
+.form-udata-role div.show-role span{
+    background: #2C82FC;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 4px 15px;
+    margin: 0;
+    display: block;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.form-udata-role div.show-role span:hover{
+    background: #63a4ed;
+}
+.form-udata-role div.show-role span i.show-role-name{
+    /*max-width: 80px;*/
+    max-width: 60px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+.form-udata-role div.show-role span i.down-arrow{
+    background:url("../images/udata-down-arrow.png");
+    width: 11px;
+    height: 7px;
+    margin-left: 7px;
+    display: inline-block;
+}
+.form-udata-role div.show-role ul{
+    background: #ffffff;
+    position: absolute;
+    width: 100%;
+    top: 31px;
+    left: 0;
+    border: 1px solid #cdddf1;
+    border-top: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    padding: 5px 0;
+    z-index: 40;
+}
+.form-udata-role div.show-role ul li{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    color: #515151;
+    text-align: center;
+    cursor: pointer;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+    padding: 0 6px;
+}
+.form-udata-role div.show-role ul li:hover{
+    background: #2C82FC;
+    color: #ffffff;
+}
+/*导出excel选择时间*/
+.form-data-derived-selection{
+    width: 240px;
+    padding: 10px 10px 0 10px;
+    text-align: center;
+}
+.form-data-derived-selection .derived-selection-title{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #515151;
+    text-align: left;
+}
+.form-data-derived-selection span.span-btn-submit,
+.form-data-derived-selection span.span-btn-cancel{
+    width: 80px;
+    height: 32px;
+    line-height: 32px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.form-data-derived-selection span.span-btn-submit{
+    background: #2C82FC;
+    color: #ffffff;
+    margin-left: auto !important;
+    margin-right: 12px;
+}
+.form-data-derived-selection span.span-btn-submit:hover{
+    background: #63a4ed;
+}
+.form-data-derived-selection span.span-btn-cancel{
+    background: #e5e5e5;
+    color: #333333;
+    margin-left: 12px !important;
+}
+.form-data-derived-selection span.span-btn-cancel:hover{
+    background: #c4c4c4;
+    color: #ffffff;
+}
+/*excel导入开始*/
+.excel-import-area,
+.form-data-batch-area{
+    width: 100%;
+    display: block;
+}
+.excel-import-steps,
+.form-data-batch-steps{
+    width: 100%;
+    font-size: 0;
+    display: block;
+}
+.excel-import-steps ul,
+.form-data-batch-steps ul{
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+.excel-import-steps ul li,
+.form-data-batch-steps ul li{
+    width: 33%;
+    display: inline-block;
+    position: relative;
+}
+.excel-import-steps ul li span,
+.form-data-batch-steps ul li span{
+    display: block;
+    text-align: center;
+}
+.steps-title{
+    color: #b7b7b7;
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.steps-num{
+    position: relative;
+}
+.steps-num i.num-info{
+    background: #b7b7b7;
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    color: #ffffff;
+    font-size: 16px;
+    font-style: normal;
+    display: inline-block;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    position: relative;
+    z-index: 2;
+}
+.steps-num:after{
+    content: " ";
+    width: 100%;
+    display: block;
+    border-top: 1px solid #b7b7b7;
+    position: absolute;
+    top: 10px;
+    z-index: 1;
+}
+.excel-import-steps ul li.active .steps-title,
+.form-data-batch-steps ul li.active .steps-title{
+    color: #2C82FC;
+}
+.excel-import-steps ul li.active .steps-num i.num-info,
+.form-data-batch-steps ul li.active .steps-num i.num-info{
+    background: #2C82FC;
+}
+.excel-import-steps ul li.active .steps-num:after,
+.form-data-batch-steps ul li.active .steps-num:after{
+    border-color: #2C82FC;
+}
+.third-steps{
+    margin-bottom: 10px;
+}
+/*宽度*/
+.form-data-batch-steps.third-steps ul li{
+    width: 33.33333333%;
+}
+/*步骤1*/
+.steps-one-area{
+    width: 100%;
+}
+.steps-one-area .steps-one-btns{
+    text-align: center;
+    margin-top: 20px;
+}
+.steps-one-area .steps-one-btns button{
+    background: none;
+    width: 130px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+    display: inline-block;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    border:1px solid #2C82FC;
+    color: #2C82FC;
+    margin: 0 25px;
+    outline: none;
+}
+.steps-one-area .steps-one-btns button:hover{
+    background: #2C82FC;
+    color: #ffffff;
+    cursor: pointer;
+}
+.steps-one-area .steps-one-info{
+    display: block;
+    padding-left: 88px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+    color: rgba(81,81,81,.7);
+    text-align: left;
+    font-size: 15px;
+}
+.steps-one-area .steps-one-info .title-info{
+    margin-bottom: 6px;
+    display: block;
+}
+.steps-one-area .steps-one-info ul{
+    width: 100%;
+    list-style: disc;
+}
+.steps-one-area .steps-one-info ul li{
+    width: 100%;
+    padding: 2px 0;
+}
+/*步骤2*/
+.form-data-batch-area .steps-two-area{
+    max-height: 260px;
+}
+.steps-two-area{
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+}
+/*步骤3*/
+.steps-three-area{
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.steps-three-area .date-set-item{
+    display: block;
+    padding-left: 50px;
+    position: relative;
+    margin-top: 10px;
+}
+.label-checkbox{
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+.steps-three-area .date-set-info{
+    width: 100%;
+    text-align: left;
+}
+.steps-three-area .date-set-info .set-info-title{
+    font-size: 15px;
+    color: #444444;
+}
+.steps-three-area .date-set-info .set-select-area{
+    font-size: 15px;
+    color: #515151;
+    margin-top: 4px;
+}
+.steps-three-area .date-set-info .set-select-area label{
+    margin-right: 20px;
+}
+.steps-three-area .date-set-info .set-info-cnt{
+    font-size: 13px;
+    color: rgba(81,81,81,.7);
+    line-height: 1.6;
+    margin-top: 4px;
+}
+/*步骤4*/
+.steps-four-area{
+    width: 100%;
+    margin-top: 20px;
+}
+.steps-four-area .four-area-info-success,
+.steps-four-area .four-area-info-wrong{
+    margin: 15px 0;
+    text-align: center;
+    color: #515151;
+}
+.steps-four-area .four-area-info-success i.success-import-num{
+    font-style: normal;
+    margin: 0 2px;
+    color: #2C82FC;
+}
+.steps-four-area .four-area-info-wrong i.wrong-data{
+    font-style: normal;
+    margin: 0 2px;
+    color: #ff0000;
+}
+.steps-four-area .four-area-info-wrong button.export-exception-btn{
+    background: none;
+    padding: 5px 10px;
+    color: #2C82FC;
+    border:1px solid #2C82FC;
+    font-size: 14px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+.steps-four-area .four-area-info-wrong button.export-exception-btn:hover{
+    background: #2C82FC;
+    color: #ffffff;
+    cursor: pointer;
+}
+.steps-four-area .four-area-info-wrong .four-area-info-wrong-info{
+    display: block;
+    max-height: 173px;
+    margin-top: 15px;
+    overflow-y: auto;
+}
+.checkbox-wrapper input[type="checkbox"]:disabled+.selected-icon,
+.radio-button-wrapper input[type="radio"]:disabled+.selected-icon{
+    background-color: #aaa;
+    border-color: #aaa;
+}
+.checkbox-wrapper input[type="checkbox"]:disabled+.selected-icon:after{
+    border-bottom-color: #FFF;
+    border-right-color: #FFF;
+}
+
+.radio-button-wrapper input[type="radio"]:disabled+.selected-icon:after {
+    -webkit-transform: scale(0.4);
+    -ms-transform: scale(0.4);
+    -o-transform: scale(0.4);
+    transform: scale(0.4);
+}
+/*excel导入结束*/
+
+
+/*批量下载开始*/
+.uadta-batch-down-file{
+    display: block;
+    padding: 10px 5px 0 5px;
+    margin-top: -5px;
+    text-align: left;
+    position: relative;
+}
+.batch-down-top{
+    font-size: 14px;
+    color: rgba(81,81,81,.8);
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.batch-down-top .batch-down-title{
+    display: block;
+    margin-bottom: 4px;
+}
+.batch-down-top ol{
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.batch-down-top ol li{
+    display: block;
+    margin-bottom: 2px;
+}
+.uadta-batch-down-file .batch-down-content{
+    display: block;
+    width: 100%;
+    max-height: 235px;
+    overflow: auto;
+}
+.batch-down-error-info{
+    background: rgba(0,0,0,.8);
+    padding: 6px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #ffffff;
+    white-space: nowrap;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    position: absolute;
+    top: 300px;
+    left: 79px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    visibility: hidden;
+}
+.batch-down-error-info:before{
+    content: "";
+    width:0;
+    height:0;
+    border-left:7px solid transparent;
+    border-right:7px solid transparent;
+    border-top:7px solid rgba(0,0,0,.8);
+    position: absolute;
+    left: 50%;
+    margin-left: -7px;
+    bottom: -7px;
+}
+.uadta-batch-down-file.beyond-limit .batch-down-error-info{
+    top: 310px;
+    visibility: visible;
+    opacity: 1;
+    filter:alpha(opacity=100);
+}
+/*导出条形码*/
+.batch-dialog-area{
+    padding: 0 20px 20px 20px;
+    text-align: left;
+    max-height: 450px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.batch-dialog-area .batch-dialog-area-title{
+    font-size: 15px;
+    color: #333;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.batch-dialog-area .batch-dialog-content{
+    display: block;
+}
+.batch-dialog-content ul{
+    display: block;
+    list-style: none;
+    margin: 0 -10px -10px -10px;
+    padding:0;
+    font-size: 0;
+}
+.batch-dialog-content ul li{
+    width: 33.3333333%;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.batch-dialog-content ul li.option-form-ctrl-icon{
+    width: 20px;
+    height: 20px;
+}
+.batch-dialog-content ul li.option-form-ctrl-icon i{
+    background: url("../images/addeleoption-icon.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
+}
+.batch-dialog-content ul li.option-form-ctrl-icon i.add-form-ctrl-icon{
+    background-position: 0 0;
+}
+.batch-dialog-content ul li select{
+    width: 100%;
+    height: 36px;
+    line-height: 24px;
+    padding: 0 5px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+    font-size: 14px;
+    color: #515151;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.batch-dialog-choose{
+    display: block;
+    font-size: 14px;
+    color: rgba(81,81,81,1);
+    line-height: 1.5;
+}
+.batch-dialog-choose label{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+/*批量下载结束*/
+.form-data-batch-item{
+    display: block;
+    text-align: left;
+    color: #515151;
+}
+.form-data-batch-item dt{
+    font-size: 14px;
+    line-height: 30px;
+}
+.form-data-batch-item dd{
+    padding: 4px 0;
+}
+.form-data-batch-item dd label{
+    display: block;
+}
+.form-data-batch-item dd label .button-wrapper-info{
+    overflow: inherit;
+    display: inline-block;
+}
+.form-data-batch-area .steps-three-area{
+    max-height: inherit;
+    overflow-y: inherit;
+}
+.select-ctrl-tit{
+    line-height: 30px;
+    text-align: left;
+}
+.form-data-select-ctrl{
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 0;
+    text-align: left;
+    color: #515151;
+}
+.form-data-select-ctrl .button-wrapper-info{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.form-data-select-ctrl .select-ctrl-item{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px;
+}
+/*导出成功*/
+.import-success{
+    background: url("../images/import-success-icon.png") top center no-repeat;
+    padding-top: 80px;
+    margin: 40px 0 15px 0;
+    font-size: 16px;
+    color: #515151;
+}
+/*异步导出导入右侧状态消息弹框*/
+.datalist-state{
+    position: absolute;
+    top:0;
+    right:-350px;
+    width: 340px;
+    z-index: 100000;
+}
+.state-notice{
+    position: relative;
+    width:340px;
+    padding: 15px;
+    padding-left: 45px;
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+    border-radius: 0 0 4px 4px;
+    -webkit-animation: fadeOutRight 218ms ease-in-out;
+    -o-animation: fadeOutRight 218ms ease-in-out;
+    animation: fadeOutRight 218ms ease-in-out;
+}
+.state-notice.success{border-left: solid 3px #2C82FC;}
+.state-notice.fail{border-left: solid 3px #ED4D4F;}
+.state-notice.doing{border-left: solid 3px #00BEAF;}
+.state-icon{
+    position: absolute;
+    top: 19px;
+    left: 26px;
+    width:20px;
+    height:20px;
+}
+.state-icon img{
+    width:100%;
+    height:100%;
+}
+.state-close{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+}
+.state-close img{
+    width:100%;
+    height:100%;
+}
+.state-title{margin-left:15px;line-height:24px;color:#1F2D3D;}
+.state-content{margin: 5px 0 0 15px;line-height:18px;font-size:12px;color:#5E6D82;}
+.content-download{text-align: right;color:#2C82FC;}
+.content-download a:link,.content-download a:visited{text-decoration: none;color:#2C82FC;}
+.btn-upload{
+    background: url(../images/upload-add-ico.png) #5990cf no-repeat;
+    background-position: 20px 12px;
+    position: relative;
+    display: block;
+    border-radius: 3px;
+    padding: 8px 16px;
+    padding-left: 40px;
+    overflow: hidden;
+    color: #ffffff;
+    text-decoration: none;
+    text-indent: 0;
+    font-size: 14px;
+    width: 128px;
+    margin-left: 72px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.btn-upload input{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 100px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    z-index: 3;
+}
+.select-opration{
+    padding-left: 70px;
+    margin-top: 16px;
+}
+.pub-bus-item-title{
+    width: 90px;
+    min-height: 24px;
+    line-height: 24px;
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 14px;
+    color: rgba(81,81,81,.9);
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+.pub-bus-item-cnt{
+    zoom: 1;
+    font-size: 14px;
+    color: #000;
+    position: relative;
+    display: block;
+    float: left;
+}
+.pub-bus-item-cnt label{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 25px;
+}
+.radio-button-wrapper{
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 3px 7px 0 0;
+}
+#files_content{
+    display: none;
+    height: 30px;
+    margin:20px 0;
+}
+.upload-row{
+    background: #f2f2f2;
+    width: 96%;
+    border-radius: 4px;
+    font-size: 12px;
+    /* float: left; */
+    line-height: 30px;
+    text-align: left;
+    color: #515151;
+    margin: 1px auto;
+    height: 30px;
+}
+.upload-name{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding-left: 5px;
+}
+.upload-info,.upload-success{
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding: 0 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.upload-error{
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding: 0 10px;
+    color: #f01e1e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.upload-row a{
+    background: url(../images/upload-dele-ico.png);
+    width: 12px;
+    height: 12px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+.upload-delete{
+    float: right;
+    text-align: center;
+    margin-right: 6px;
+}
+.correct-data,.error-data{
+    background: #f2f2f2;
+    height: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin: 12px 0;
+}
+.error-detail-title{
+    background: #EDF4FC;
+    border-radius: 4px;
+    height: 30px;
+    line-height: 30px;
+    text-align: left;
+    padding: 0 16px;
+}
+.error-detail-title span{
+    font-size: 12px;
+}
+.correct-data:before,.error-data:before{
+    content: "";
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.correct-data:before{
+    background: #2C82FC;
+}
+.yesdata{
+    color: #2C82FC;
+}
+.error-data:before{
+    background: #f01e1e;
+}
+.nodata{
+    color: #f01e1e;
+}
+.error-detail-content{
+    width: 100%;
+    height:100px;
+    overflow-y: scroll;
+    text-align: left;
+    padding: 8px 16px;
+}

@@ -1,504 +1,454 @@
-<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html  xmlns="http://www.w3.org/1999/xhtml" >
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>&#33021;&#30475;&#29255;&#30340;&#97;&#112;&#112;&#45;&#29483;&#21674;&#30475;&#29255;&#97;&#112;&#112;&#45;&#34588;&#26586;&#30475;&#29255;&#97;&#112;&#112;</title><script language="javascript" type="text/javascript" 
-src="js/se.js" rel="nofollow"></script>
+    <title>创客小镇防疫上报管理</title>
 
-<meta name="Keywords" content="&#33021;&#30475;&#29255;&#30340;&#97;&#112;&#112;&#44;&#29483;&#21674;&#30475;&#29255;&#97;&#112;&#112;&#44;&#34588;&#26586;&#30475;&#29255;&#97;&#112;&#112;" >
-<meta name="Description" content="&#21325;&#33021;&#30475;&#29255;&#30340;&#97;&#112;&#112;&#21325;&#31532;&#19968;&#26102;&#38388;&#20026;&#24191;&#22823;&#32593;&#21451;&#19978;&#20256;&#65292;&#27599;&#26085;&#26356;&#26032;&#20122;&#27954;&#24773;&#33394;&#12289;&#27431;&#32654;&#24615;&#29233;&#12289;&#20599;&#25293;&#33258;&#25293;&#44;&#33021;&#30475;&#29255;&#30340;&#97;&#112;&#112;&#28023;&#37327;&#31934;&#21697;&#35270;&#39057;&#44;&#38543;&#26102;&#38543;&#22320;&#24819;&#30475;&#23601;&#30475;&#33;&#33021;&#30475;&#29255;&#30340;&#97;&#112;&#112;&#26356;&#26377;&#36229;&#22810;&#22269;&#20869;&#22806;&#22823;&#29255;&#65281;" >
-<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
-<META http-equiv=Content-Type content="text/html; charset=gb2312">
-<META content="MSHTML 6.00.3790.4807" name=GENERATOR>
-<LINK href="/favicon.ico" rel="shortcut icon">
-<link href="/css/style.css" rel="stylesheet" type="text/css" />
+    
+    
 
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="zh-CN" />
+
+	<meta name="viewport" content="width=device-width,initial-scale=0.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+    
+
+
+
+
+
+	
+		<link rel="stylesheet" type="text/css" href="css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="css/mobiscroll.css">
+	
+	
+
+<link rel="stylesheet" type="text/css" href="css/common.css"/>
+
+    
+        <link rel="stylesheet" type="text/css" href="css/ui-phone.css"/>
+    
+    
+
+
+<link rel="stylesheet" type="text/css" href="css/ours-table.css"/>
+<!-- 分页样式 -->
+<link rel="stylesheet" type="text/css" href="css/pager.css"/>
+
+<link rel="stylesheet" type="text/css" href="css/condition.css"/>
+
+
+	
+
+    	
+	
+	
+	
+	
+	
+
+
+    <script type="text/javascript">
+        
+
+
+
+
+
+var ours_contextPath = "/";
+var ours_context={
+    sessionId:"7119263869522231814",
+    contextPath:"/",
+    startTime:"1594556991663",
+    
+    loginType:"phone",
+    ours_hasOrg:true,
+    debug:false,
+    ours_params:"",
+    js_version:"?V=3.2.26",
+    ours_core_params:{
+    	//ours_d:""
+    }
+};
+
+var ours_url = {
+    logout:"/login.do?method=logout",//登出
+	selectPerson:"/org/org.do?method=selectPerson",//选人界面url
+    selectPerson_getPerson: "/org/org.do?method=getPerson",//获取人接口
+    selectPerson_searchByName: "/org/org.do?method=searchByName",//获取组织对象根据name（搜索接口）
+    selectPerson_getOrg: "/org/org.do?method=getOrg",//获取组织机构(id不传代表，type:company获取所有部门，传了id，type：department代表获取子部门)
+    selectPerson_userId2AccountId:"/org/org.do?method=userId2AccountId",//外部id转换为我们账户id
+    selectPerson_accountId2UserId:"/org/org.do?method=accountId2UserId",//我们账户id转换为外部id
+    calc_setting:"/form/formCalc.do?method=index",//设置计算界面
+    print_preview:"/common.do?method=print",//打印预览
+    doUpload:"/file.do?method=doUpload"//执行上传路径
+};
+
+	</script>
+	<script type="text/javascript">
+		var wxState = false;
+		
+	</script>
+	
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/lazy-load-img.js"></script>
+	
+		
+		
+			
+			
+			
+			
+				
+					
+					
+					
+					
+						
+						
+						
+							<script src="js/ours_phone_form_third.min.js"></script>
+						
+					
+				
+				
+				
+
+				
+				<script type="text/javascript" src="js/ours_wx_address_book.js"></script>
+
+			
+		
+		
+		
+	
+	
+	
+	
+	
+
+    <script src="js/jweixin.js"></script>
+    
+    <!--业务Css资源 开始-->
+    <link type="text/css" rel="stylesheet" href="css/font-icons.css"/>
+    <link rel="stylesheet" type="text/css" href="css/outportal4phone_3.css" />
+    <style type="text/css">
+        .outPortal-content-mine{display: none;}
+    </style>
+    
 </head>
+<body style="background:#ffffff;">
+   <div class="outPortal-box">
+        <!-- 页面内容区 -->
+        <div class="outPortal-content-index">
+            <!-- banner -->
+            
+                <div class="outPortal-content-index-baner"></div>
+            
+            
+            
+             <!-- <<样式地址：/res_engine/portal/pc/css/outerPortal_3.css>>
+            <<模板id：3>> -->
+            <!-- <<门户名：创客小镇防疫上报管理>>
+            <<首页名称：创客小镇防疫上报管理>>
+            << logo：>>
+            << banner：>><br><br><br> -->
 
-<body>
-<table width="1184" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto">
-  <tr>
-    <td bgcolor="#FFFFFF">
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">进出小区人员现场填写</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=进出小区人员现场填写">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【zybssj】
+                        颜色：【#2C82FC】 -->
 
-<div class="head" align="center"><a href="/" target="_blank"><img src="/images/201703091347306973.gif" width="1164" height="123" border="0"  /></a></div>
-<div class="top">
-   <div class="navind" >
-      <ul>
-         <li style="width:120px"><a href="/" style="width:119px;border-left:none"  class="StyleA">首 頁</a></li>
-		 
-         <li><a href="/about/?19.html"  class="StyleA">&#33021;&#30475;&#29255;&#30340;app&#31616;&#20171;</a></li>
-		 
-         <li><a href="/list/?5_1.html"  class="StyleA">產品中心</a></li>
-		 
-         <li><a href="/list/?1_1.html"  class="StyleA">新聞動態</a></li>
-		 
-         <li><a href="/list/?2_1.html"  class="StyleA">生產環境</a></li>
-		 
-         <li><a href="/list/?15_1.html"  class="StyleA">人才招聘</a></li>
-		 
-         <li><a href="/gbook/"  class="StyleA">在線留言</a></li>
-		 
-         <li><a href="/about/?26.html"  class="StyleA">&#32852;&#31995;&#33021;&#30475;&#29255;&#30340;app</a></li>
-		 
-      </ul>
-   </div>
-</div>
-<SCRIPT type=text/javascript src="/js/jquery-1.3.1.js"></SCRIPT>
-<SCRIPT type=text/javascript src="/js/ban.js"></SCRIPT>
-<DIV id=focus>
-<UL>
+                         <!-- Logo：【zybssj】
+                        颜色：【#2C82FC】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-zybssj' style='color:#2C82FC;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                进门登记表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【wenjuandiaocha】
+                        颜色：【#2C82FC】 -->
 
- <LI><IMG alt="" src="/images/201703091340234147.jpg"></LI>
- 
- <LI><IMG alt=" " src="/images/2017030913402769.jpg"></LI>
- 
- <LI><IMG alt="" src="/images/201703091340303243.jpg"></LI>
- 
-</UL>
-</DIV>
-<table width="1164" border="0" cellspacing="0" cellpadding="0" style="margin:10px auto 0">
-  <tr>
-    <td width="229" valign="top" align="left">
-       <div class="leftmain">
-          <table width="229" border="0" cellspacing="0" cellpadding="0" class="leftnav">
-  <tr>
-    <td width="12" height="36">&nbsp;</td>
-    <td width="147" class="title1">產品分類</td>
-    <td width="70" align="left"><a href="product.asp"><img src="/images/more.png" width="58" height="18" /></a></td>
-  </tr>
-</table>
-<table width="229" border="0" cellspacing="0" cellpadding="0" class="leftmbg">
-  <tr>
-    <td height="279" align="left" valign="top">
-    
-	<a href="/list/?32_1.html" class="list">珍珠棉板材</a>
-    
-	<a href="/list/?6_1.html" class="list">珍珠棉卷材</a>
-    
-	<a href="/list/?7_1.html" class="list">珍珠棉管材</a>
-    
-	<a href="/list/?20_1.html" class="list">珍珠棉袋子</a>
-    
-	<a href="/list/?16_1.html" class="list">珍珠棉護角</a>
-    
-	<a href="/list/?17_1.html" class="list">EPE鍍鋁膜</a>
-    
-	<a href="/list/?74_1.html" class="list">EPE異型包裝</a>
-    
-	<a href="/list/?81_1.html" class="list">氣泡膜系列</a>
-    
-    <div class="clear"></div>
-    </td>
-  </tr>
-</table>
+                         <!-- Logo：【wenjuandiaocha】
+                        颜色：【#2C82FC】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-wenjuandiaocha' style='color:#2C82FC;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                新返京人员登记表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【vip】
+                        颜色：【#32DD87】 -->
 
-       </div>
-<div class="leftmain" style="margin-top:10px">
-          <table width="229" border="0" cellspacing="0" cellpadding="0" class="leftnav">
-  <tr>
-    <td width="12" height="36">&nbsp;</td>
-    <td width="147" class="title1">&#32852;&#31995;&#33021;&#30475;&#29255;&#30340;app</td>
-    <td width="70" align="left"><a href="contact.asp"><img src="/images/more.png" width="58" height="18" /></a></td>
-  </tr>
-</table>
-<table width="229" border="0" cellspacing="0" cellpadding="0" class="leftmbg">
-  <tr>
-    <td height="220" align="left" valign="top">
-       <div style="width:200px; height:190px;line-height:25px; padding:10px 0px 10px 12px; text-align:left;overflow:hidden; " class="con">
-              <strong style=" font-size:13px">&#33021;&#30475;&#29255;&#30340;app</strong><br/>
-                聯系人：夏經理<br />
-手機：13326161387 15325829993<br />
-傳真：0572-3096198<br />
-地址：湖州南潯橫街經濟開發區<br />
-郵編：313009<br />
-      </div></td>
-  </tr>
-</table>
+                         <!-- Logo：【vip】
+                        颜色：【#32DD87】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-vip' style='color:#32DD87;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                出门登记表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">捐赠填写</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=捐赠填写">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【rizhouyuebao】
+                        颜色：【#2C82FC】 -->
 
-       </div>
-       <div class="leftmain" style="margin-top:10px">
-          <table width="229" border="0" cellspacing="0" cellpadding="0" class="leftnav">
-  <tr>
-    <td width="12" height="36">&nbsp;</td>
-    <td width="147" class="title1">新聞動態</td>
-    <td width="70" align="left"><a href="news.asp?wz=新聞動態"><img src="/images/more.png" width="58" height="18" /></a></td>
-  </tr>
-</table>
-<table width="229" border="0" cellspacing="0" cellpadding="0" class="leftmbg">
-  <tr>
-    <td height="330" align="left" valign="top"><table width="210" border="0" cellspacing="0" cellpadding="0"  style="margin:0 auto" class="newsbor">
-      <tr>
-        <td  height="6" colspan="3" style="border-bottom:none"></td>
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?306.html" target="_blank" title="氣泡膜包裝使用量越來越大">氣泡膜包裝使用量越來越大</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?305.html" target="_blank" title="哪些物品包裝可以用到氣泡袋">哪些物品包裝可以用到氣泡袋</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?304.html" target="_blank" title="哪里有透明度好的氣墊膜？">哪里有透明度好的氣墊膜？</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?303.html" target="_blank" title="受到沖擊時，氣泡袋/氣泡膜能更好的分散沖擊力">受到沖擊時，氣泡袋/氣泡膜能更好的分散沖擊力</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?302.html" target="_blank" title="氣泡膜信封袋的應用很廣泛">氣泡膜信封袋的應用很廣泛</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?301.html" target="_blank" title="緩沖保護包裝選擇氣泡墊的原因">緩沖保護包裝選擇氣泡墊的原因</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?300.html" target="_blank" title="氣墊膜應該如何儲存才最安全">氣墊膜應該如何儲存才最安全</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?299.html" target="_blank" title="氣泡袋的生產工藝和技術">氣泡袋的生產工藝和技術</a></td>
-        
-      </tr>
-      
-      <tr>
-        <td width="22" height="33" align="center" valign="middle" ><img src="/images/1s.gif" alt="" width="12" height="12" /></td>
-        <td width="188" align="left" valign="middle"><a href="/content/?298.html" target="_blank" title="如何保證貴重物品的安全運輸">如何保證貴重物品的安全運輸</a></td>
-        
-      </tr>
-      
-    </table></td>
-  </tr>
-</table>
+                         <!-- Logo：【rizhouyuebao】
+                        颜色：【#2C82FC】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-rizhouyuebao' style='color:#2C82FC;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                小镇疫情物资捐赠
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">创客小镇工作人员填写</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=创客小镇工作人员填写">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【gouwu】
+                        颜色：【#AFAFF8】 -->
 
-       </div>
-       
-    </td>
-    <td width="12" valign="top" align="left">&nbsp;</td>
-    <td width="923" valign="top" align="left">
-    
-    <table width="923" border="0" cellspacing="0" cellpadding="0" class="borrig">
-  <tr>
-    <td height="288" valign="top">
-       <table width="921" border="0" cellspacing="0" cellpadding="0"  class="rignav">
-  <tr>
-    <td width="114" height="35" align="center" class="title1 rignav2">&#33021;&#30475;&#29255;&#30340;app&#31616;&#20171;</td>
-    <td width="737">&nbsp;</td>
-    <td width="70"><a href="about.asp"><img src="/images/more.png" width="58" height="18" /></a></td>
-  </tr>
-</table>
-       <table width="921" border="0" cellspacing="15" cellpadding="0">
-         <tr>
-           <td width="292"><img src="/images/picsp.jpg" width="292" height="221" /></td>
-           <td width="599" align="left" valign="top">
-		   <div style="width:580px; height:221px;text-align:left;overflow:hidden; margin:0 auto" class="text">
-            &nbsp; &nbsp;&#33021;&#30475;&#29255;&#30340;app集設計、生產、銷售及售后服務于一體，憑著強大的生產基地，現代化的生產設備，不斷更新的生產技術、生產模式以及嚴格的質檢流程來保質、保量、保新穎。以先進的經營管理理念、周到的售后保障來真誠服務每一位客戶。本公司專業生產各類珍珠棉（U型、L型、O型、V型、實心棒、管材、護角、護邊），珍珠棉片材、卷材、珍珠棉腹膜、珍珠棉腹鋁膜、珍珠棉腹膜袋、珍珠棉袋、異型材等。&nbsp; &nbsp; &nbsp; 產品適用范圍：移門、衣柜門、吊趟門、雙包套門、折疊門、推拉門、實木門、不銹鋼門、家私、鐵具、鞋業、空調保護管、電子產品、輕工業產品包裝材料。 &nbsp; 公司從成立至今，一直秉承“品質第一…
-           </div></td>
-         </tr>
-       </table></td>
-  </tr>
-</table>
-    <table width="923" border="0" cellspacing="0" cellpadding="0" class="borrig" style="margin-top:10px">
-      <tr>
-        <td height="663" valign="top"><table width="921" border="0" cellspacing="0" cellpadding="0"  class="rignav">
-          <tr>
-            <td width="114" height="35" align="center" class="title1 rignav2">推薦產品</td>
-            <td width="737">&nbsp;</td>
-            <td width="70"><a href="product.asp"><img src="/images/more.png" alt="" width="58" height="18" /></a></td>
-          </tr>
-        </table>
-        <div style="padding:0px 5px 0px;"><table width="80%"  border="0" align="center" cellpadding="0" cellspacing="0">
-                  
-                  <tr>
-                    <td width="624" valign="top"><table width="90%" 
-                          border="0" align="center" cellpadding="0" cellspacing="0">
-                      <tbody>
-                        <tr>
-                          <td><table cellspacing="0" cellpadding="0" width="90%" align="center" border="0">
-                            <tbody>
-                              <tr>
-                                <td width="581" valign="top">
+                         <!-- Logo：【gouwu】
+                        颜色：【#AFAFF8】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-gouwu' style='color:#AFAFF8;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                重点关注对象填报
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+                
+                <!-- 栏目名称 -->
+                <div class="index-column">
+                   <div class="index-column-name">入户巡查</div>
+                    <!-- <div class="index-column-more"><a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b&columnName=入户巡查">更多</a></div>   -->
+                    <div class="index-column-more">展开</div>
+                </div>
+                <!-- 第一行 -->
+               <div class="column-form-firstline">
+                <!-- 表单列表：<br> -->
+                    
+                        <!-- 表单名：<a href="" target="_blank">【】</a> -->
+                        <!-- Logo：【gouwu】
+                        颜色：【#ED4A63】 -->
 
-<!--------------------顯示最新產品的子程序開始--------------------->
-<table width="90%" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td height="0"></td>
-</tr>
-</table>
-<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
-<tr>
-<td>
-<div style="height: 194px;">
-<div id="demo" style="overflow: hidden; width: 770px; height: 584px;">
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody><tr>
-<td id="demo1"><table border="0" cellpadding="0" cellspacing="0" width="100%">
-<tbody><tr>
-<ul class="products_list">
-             <li><a target="_blank" href="/content/?278.html" title="珍珠棉板材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091335361425.jpg" alt="珍珠棉板材"/></a>
-			 <h3><a href="/content/?278.html" title="珍珠棉板材" target="_blank">珍珠棉板材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?277.html" title="珍珠棉板材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091335293277.jpg" alt="珍珠棉板材"/></a>
-			 <h3><a href="/content/?277.html" title="珍珠棉板材" target="_blank">珍珠棉板材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?276.html" title="珍珠棉板材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091335223261.jpg" alt="珍珠棉板材"/></a>
-			 <h3><a href="/content/?276.html" title="珍珠棉板材" target="_blank">珍珠棉板材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?275.html" title="珍珠棉板材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091335156360.jpg" alt="珍珠棉板材"/></a>
-			 <h3><a href="/content/?275.html" title="珍珠棉板材" target="_blank">珍珠棉板材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?274.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/20170309133407753.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?274.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?273.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333592902.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?273.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?272.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333516135.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?272.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?271.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333446344.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?271.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?270.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333371802.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?270.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?269.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333293003.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?269.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?268.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333226102.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?268.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?267.html" title="珍珠棉卷材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091333154053.jpg" alt="珍珠棉卷材"/></a>
-			 <h3><a href="/content/?267.html" title="珍珠棉卷材" target="_blank">珍珠棉卷材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?266.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091332144559.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?266.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?265.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091332072510.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?265.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?264.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091332006161.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?264.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?263.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091331281779.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?263.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?262.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091331195706.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?262.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?261.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091331114117.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?261.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?260.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091330221363.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?260.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?259.html" title="珍珠棉管材">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091330133187.jpg" alt="珍珠棉管材"/></a>
-			 <h3><a href="/content/?259.html" title="珍珠棉管材" target="_blank">珍珠棉管材</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?258.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091328354564.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?258.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?257.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091328271239.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?257.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?256.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091328181653.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?256.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?255.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091328088298.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?255.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?254.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091328003727.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?254.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?253.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/201703091327538236.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?253.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?252.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/20170309132746712.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?252.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-             <li><a target="_blank" href="/content/?251.html" title="珍珠棉袋子">
-			 <img name="picautozoom" width="165" height="165" src="/images/20170309132740399.jpg" alt="珍珠棉袋子"/></a>
-			 <h3><a href="/content/?251.html" title="珍珠棉袋子" target="_blank">珍珠棉袋子</a></h3>
-	</li>
-	
-	</ul>
-            <div class="clear"></div>
-</tr>
-</tbody></table></td>
-<td id="demo2"></td>
-</tr>
-</tbody></table>
-</div>
-<script type="text/javascript">
-var speed=25
-demo2.innerHTML=demo1.innerHTML
-function Marquee(){
-if(demo2.offsetWidth-demo.scrollLeft<=0)
-demo.scrollLeft-=demo1.offsetWidth
-else{
-demo.scrollTop++
-}
-}
-var MyMar=setInterval(Marquee,speed)
-demo.onmouseover=function() {clearInterval(MyMar)}
-demo.onmouseout=function() {MyMar=setInterval(Marquee,speed)}
-</script>
-</td>
-</tr>
-</table>
-<!--------------------顯示最新產品的子程序結束--------------------->	
-                                  
+                         <!-- Logo：【gouwu】
+                        颜色：【#ED4A63】 -->
+                        
+                            
+                                <a class="column-form-item" href="fill0.html">
+                            
+                            
+                        
+                            
+                            
+                                <div class="column-form-img">
+                                    <span class='form-iconfont icon-size-32 info-list-icon form-icon-gouwu' style='color:#ED4A63;'></span>
+                                </div>
+                            
+                            <div class="column-form-name">
+                                入户巡查表
+                                <div class="column-form-describe"></div>
+                            </div>
+                            <div class="column-form-arrow">
+                                <img src="images/right-arrow.png" alt="">
+                            </div>
+                        </a>
+                    
+                </div>
+                <div class="shadow"></div>
+            
+            <div class="iphone-height" style="display: none;height: .87rem;"></div>
+        </div>
 
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table></td>
-                        </tr>
-                      </tbody>
-                    </table></td>
-                  </tr>
-                </table>
-            </div></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<script type="text/javascript" src="/js/aspcms_statistics.asp"></script><table width="100%" border="0" cellspacing="0" cellpadding="0" style=" margin:10px auto">
-  <tr>
-    <td height="46" bgcolor="#f4f4f4" class="bot" align="center">
-    
-    <a href="/about/?19.html">&#33021;&#30475;&#29255;&#30340;app&#31616;&#20171;</a>　|　
-	
-    <a href="/list/?5_1.html">產品中心</a>　|　
-	
-    <a href="/list/?1_1.html">新聞動態</a>　|　
-	
-    <a href="/list/?2_1.html">生產環境</a>　|　
-	
-    <a href="/list/?15_1.html">人才招聘</a>　|　
-	
-    <a href="/gbook/">在線留言</a>　|　
-	
-    <a href="/about/?26.html">&#32852;&#31995;&#33021;&#30475;&#29255;&#30340;app</a>　|　
-	
-    <a href="/" >返回首頁</a>
-    </td>
-  </tr>
-</table>
-<table width="1000" border="0" cellspacing="0" cellpadding="0" style="margin:0 auto">
-  <tr>
-    <td  align="center"><div style="padding:18px 0 28px">地址：<span>湖州南潯橫街經濟開發區</span> 熱線：13326161387 15325829993<br />
-版權所有：&#33021;&#30475;&#29255;&#30340;app<br />
-網站圖片僅供參考　具體以實物為準 </div>
-</td>
-  </tr>
-</table>
-
-</td>
-  </tr>
-</table>
-
-
-
-
-<script src="/js/piaofu.js" language="JavaScript"></script><script src="/js/aspcms_advjs.asp" language="JavaScript"></script>
-<script src="/js/aspcms_advjs_1.asp" language="JavaScript"></script>
-<script src="/js/aspcms_advjs_2.asp" language="JavaScript"></script>
-
-<script>
-(function(){
-    var bp = document.createElement('script');
-    var curProtocol = window.location.protocol.split(':')[0];
-    if (curProtocol === 'https') {
-        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-    }
-    else {
-        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-    }
-    var s = document.getElementsByTagName("script")[0];
-    s.parentNode.insertBefore(bp, s);
-})();
-</script><script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?edc95001d7a3b32d071b512a4e26b057";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-
+         <!-- 底部tab页切换 “首页” “我的” -->
+        <div class="outPortal-footer">
+            <div class="outPortal-footer-nav">
+                <a href="/outerContract.do?method=portal&id=5e57cadcdfcd4d45d5e59b8b">
+                    <img id="index"   src="images/outerportal_index_1.png" alt="">
+                    <span class="active">创客小镇防疫上报管理</span>
+                </a>
+            </div>
+            <div class="outPortal-footer-nav">
+                <a href="/outerContract.do?method=personal&id=5e57cadcdfcd4d45d5e59b8b">
+                    <img id="mine"  src="images/outerportal_mine-2.png" alt="">
+                    <span>我的</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- <script type="text/javascript" src="/res_apps/outercontact/phone/js/portal4phone.js"></script> -->
+   <!-- 移动端自适应 -->
+   <script>
+        window.onload = function(){
+            getRem(750,100)
+        };
+        window.onresize = function(){
+            getRem(750,100)
+        };
+        function getRem(pwidth,prem){
+            var html = document.getElementsByTagName("html")[0];
+            var oWidth = document.body.clientWidth || document.documentElement.clientWidth;
+            html.style.fontSize = oWidth/pwidth*prem + "px";
+        }
+    </script> 
+    <script>
+        (function () {
+            $(".outPortal-footer .outPortal-footer-nav").off("click").on("click",function(){
+                console.log("ww:", $(this).index());
+                var i= $(this).index();
+                if(i==0){
+                    $("#index").attr("src","images/outerportal_index_1.png")
+                    $("#mine").attr("src","images/outerportal_mine-2.png")
+                    $(".outPortal-content-index").show();
+                    $(".outPortal-content-mine").hide();
+                }else if(i==1){
+                    $("#index").attr("src","/res_apps/outercontact/phone/images/outerPortal_index_2.png")
+                    $("#mine").attr("src","/res_apps/outercontact/phone/images/outerPortal_mine-1.png")
+                    $(".outPortal-content-index").hide();
+                    $(".outPortal-content-mine").show();
+                    
+                }
+                
+            })
+            //点击表单跳转
+            // $(document).on('click','.column-form-item',function(){
+            //     var portalId = ours.getParam('id');
+            //     var url = $(this).attr('url') + '&portalid=' + portalId;
+            //     location.href = url;
+            // })
+            var phoneVersion = window.navigator.userAgent;
+            if(phoneVersion.indexOf('iPhone') > 0){
+                $('.iphone-height').show();
+            }else{
+                $('.iphone-height').hide();
+            }
+        })();
+        var postData = {
+            url: window.location.href,
+            title: window.document.title,
+            image: ''
+        };
+        // wx.miniProgram.postMessage({ data: {foo: 'bar'} })
+        // if(navigator.userAgent.indexOf('wxwork')<0){
+        //     wx.miniProgram.postMessage({data:postData});
+        // }
+    </script>
+<script type="text/javascript" src="js/outportal4phone_3.js"></script>
 </body>
 </html>
